@@ -18,19 +18,20 @@
     <meta property="og:site_name" content="MOBO Beach Club">
     <meta property="og:title" content="MOBO Beach Club — Pool · Beach · Restaurant · Café">
     <meta property="og:description" content="A modern waterfront escape near Al Hoceima with sunset views. Open daily 10 AM – 03 AM.">
-    <meta property="og:image" content="https://example.com/assets/og-image.jpg">
+    <meta property="og:image" content="https://mobo.elyousfimohamed263.workers.dev/assets/og-image.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:locale" content="en">
     <meta name="twitter:card" content="summary_large_image">
 
-    <!-- Resolve the theme before first paint so dark mode never flashes white. -->
+    <!-- Resolve the theme before first paint so dark mode never flashes.
+         Light is the default regardless of the visitor's OS setting — the cream
+         palette is the brand, so dark is opt-in via the toggle only. -->
     <script>
         (function () {
             try {
-                var saved = localStorage.getItem("mobo-theme");
                 document.documentElement.dataset.theme =
-                    saved || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+                    localStorage.getItem("mobo-theme") === "dark" ? "dark" : "light";
             } catch (e) {
                 document.documentElement.dataset.theme = "light";
             }

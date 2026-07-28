@@ -34,17 +34,8 @@
         }
     });
 
-    // Follow the OS only while the visitor hasn't made a choice of their own.
-    var osScheme = window.matchMedia("(prefers-color-scheme: dark)");
-    osScheme.addEventListener("change", function (e) {
-        var stored;
-        try {
-            stored = localStorage.getItem("mobo-theme");
-        } catch (err) {
-            stored = null;
-        }
-        if (!stored) applyTheme(e.matches ? "dark" : "light");
-    });
+    // Deliberately does NOT follow the OS colour scheme. The site opens light,
+    // and only the toggle switches it — matching the inline script in <head>.
 
     // --- mobile panel -----------------------------------------------------
     function setMenu(open) {
