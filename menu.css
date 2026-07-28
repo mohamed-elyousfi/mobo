@@ -1,0 +1,384 @@
+/* ==========================================================================
+   MOBO BEACH CLUB — menu page
+   Loaded only by menu.html. Tokens, base and navbar come from index.css.
+   ========================================================================== */
+
+:root {
+    --jump-h: 3.5rem;
+}
+
+/* index.css already sets scroll-padding-top for the navbar. This page has a
+   second sticky bar under it, so widen that instead of also putting
+   scroll-margin-top on each section — the two would stack and overshoot. */
+html {
+    scroll-padding-top: calc(var(--nav-h) + var(--jump-h) + 0.5rem);
+}
+
+/* --------------------------------------------------------------------------
+   PAGE HEADING
+   -------------------------------------------------------------------------- */
+/* Full-bleed banner. The wood carries bright highlights (up to #feae6a), where
+   cream type would sit at 1.73:1 — so the wash below is doing real work, not
+   decoration. Type colours are fixed rather than themed, since the backdrop is
+   the same photograph in both themes. */
+.m-head {
+    position: relative;
+    display: grid;
+    place-items: center;
+    /* The ceiling is what desktop actually lands on — 28vw passes 20rem at
+       around 1140px wide, so raising the max is what makes the banner taller on
+       big screens without touching phones. */
+    min-height: clamp(13rem, 30vw, 30rem);
+    padding: clamp(2.5rem, 6vw, 4rem) var(--gutter);
+    background-color: #2a170e;
+    background-image: url("assets/menu2.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    text-align: center;
+}
+
+.m-head::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(ellipse at center, rgba(9, 22, 20, 0.42) 0%, rgba(9, 22, 20, 0.68) 100%),
+        linear-gradient(to bottom, rgba(9, 22, 20, 0.28), rgba(9, 22, 20, 0.42));
+}
+
+.m-head__inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.m-head__topper {
+    font-size: clamp(1.05rem, 2.3vw, 1.4rem);
+    font-weight: 700;
+    letter-spacing: 0.26em;
+    text-indent: 0.26em;
+    text-transform: uppercase;
+    color: #f2d5a6;
+    text-shadow: 0 1px 12px rgba(9, 22, 20, 0.6);
+}
+
+.m-head__wave {
+    display: block;
+    margin-block: 0.85rem 1rem;
+    height: auto;
+    width: clamp(6rem, 12vw, 7.5rem);
+    fill: none;
+    stroke: #f2d5a6;
+    stroke-width: 2;
+    stroke-linecap: round;
+}
+
+.m-head__title {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.5rem, 7vw, 4rem);
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: -0.015em;
+    color: #fdf8f0;
+    text-shadow: 0 2px 20px rgba(9, 22, 20, 0.55);
+}
+
+/* --------------------------------------------------------------------------
+   LEVEL 1 — GROUP TABS
+   Seven groups, so underlined tabs rather than pills: quieter, and they fit on
+   one line on desktop without a scrolling strip.
+   -------------------------------------------------------------------------- */
+.m-tabs {
+    position: sticky;
+    top: var(--nav-h);
+    z-index: 90;
+    background-color: var(--bg);
+    border-bottom: 1px solid var(--line);
+}
+
+.m-tabs__list {
+    display: flex;
+    gap: clamp(1rem, 3vw, 2rem);
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+    max-width: 82.5rem;
+    height: var(--jump-h);
+    align-items: stretch;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+}
+
+.m-tabs__list::-webkit-scrollbar {
+    display: none;
+}
+
+.m-tab {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    font-size: clamp(0.9rem, 1.6vw, 1rem);
+    font-weight: 500;
+    white-space: nowrap;
+    color: var(--text-muted);
+    transition: color 0.2s var(--ease);
+}
+
+.m-tab::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    border-radius: 2px 2px 0 0;
+    background-color: var(--marker);
+    transform: scaleX(0);
+    transition: transform 0.25s var(--ease);
+}
+
+.m-tab:hover {
+    color: var(--text);
+}
+
+.m-tab.is-current {
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.m-tab.is-current::after {
+    transform: scaleX(1);
+}
+
+/* --------------------------------------------------------------------------
+   LEVEL 2 — SUB-CATEGORY FILTER
+   Chips on wide screens; a native select on phones, where a horizontal chip
+   strip is the worse control.
+   -------------------------------------------------------------------------- */
+.m-sub {
+    margin-bottom: clamp(1.5rem, 4vw, 2.25rem);
+}
+
+.m-sub__label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.m-sub__select {
+    display: none;
+    border: 1px solid var(--line);
+    border-radius: 0.5rem;
+    background-color: var(--surface);
+    padding: 0.65rem 0.85rem;
+    width: 100%;
+    font: inherit;
+    font-size: 0.95rem;
+    color: var(--text);
+}
+
+.m-sub__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+}
+
+.m-sub__chip {
+    display: inline-block;
+    border: 1px solid var(--line);
+    border-radius: 5rem;
+    padding: 0.35rem 0.8rem;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    color: var(--text-muted);
+    transition: background-color 0.2s var(--ease), color 0.2s var(--ease),
+                border-color 0.2s var(--ease);
+}
+
+.m-sub__chip:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.m-sub__chip.is-current {
+    border-color: var(--accent);
+    background-color: var(--accent);
+    color: var(--bg);
+}
+
+/* Only JS can act on these, so they stay hidden until it has loaded — without
+   it every panel and category is simply visible. */
+.js-menu .m-panel[hidden],
+.js-menu .m-cat[hidden] {
+    display: none;
+}
+
+@media (max-width: 47.999rem) {
+    .js-menu .m-sub__select {
+        display: block;
+    }
+
+    .js-menu .m-sub__list {
+        display: none;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   CATEGORIES
+   -------------------------------------------------------------------------- */
+.m-body {
+    margin-inline: auto;
+    padding: clamp(2rem, 5vw, 3.5rem) var(--gutter) clamp(4rem, 10vw, 7rem);
+    max-width: 60rem;
+}
+
+.m-cat + .m-cat {
+    margin-top: clamp(2.75rem, 6vw, 4rem);
+}
+
+.m-cat__title {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.5rem, 3.2vw, 2rem);
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--text);
+}
+
+.m-cat__title::after {
+    content: "";
+    display: block;
+    margin-top: 0.6rem;
+    height: 2px;
+    width: 3rem;
+    border-radius: 2px;
+    background-color: var(--marker);
+}
+
+.m-cat__note {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   ITEMS
+   -------------------------------------------------------------------------- */
+.m-list {
+    margin-top: 1.5rem;
+    list-style: none;
+}
+
+.m-item {
+    display: flex;
+    gap: 0.85rem;
+    padding-block: 0.85rem;
+}
+
+.m-item + .m-item {
+    border-top: 1px solid var(--line);
+}
+
+.m-item__num {
+    flex: none;
+    padding-top: 0.15rem;
+    min-width: 1.75rem;
+    font-size: 0.8rem;
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+    color: var(--marker);
+}
+
+.m-item__body {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Name — dotted leader — price, the way a printed menu reads. */
+.m-item__head {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.m-item__name {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.35;
+    color: var(--text);
+}
+
+.m-item__dots {
+    flex: 1;
+    min-width: 1.5rem;
+    border-bottom: 1px dotted var(--line);
+    transform: translateY(-0.25rem);
+}
+
+.m-item__price {
+    flex: none;
+    font-size: 0.95rem;
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    white-space: nowrap;
+    color: var(--accent);
+}
+
+.m-item__desc {
+    margin-top: 0.25rem;
+    max-width: 46ch;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: var(--text-muted);
+}
+
+/* --- serving sizes (only MIXED GRILL so far) ----------------------------- */
+.m-variants {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 0.5rem;
+    margin-top: 0.6rem;
+    list-style: none;
+}
+
+.m-variant {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.4rem;
+    border: 1px solid var(--line);
+    border-radius: 5rem;
+    padding: 0.25rem 0.7rem;
+    font-size: 0.8rem;
+}
+
+.m-variant__label {
+    color: var(--text-muted);
+}
+
+.m-variant__price {
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    white-space: nowrap;
+    color: var(--accent);
+}
+
+/* --------------------------------------------------------------------------
+   WIDER SCREENS
+   -------------------------------------------------------------------------- */
+@media (min-width: 48rem) {
+    .m-item__name {
+        font-size: 1.075rem;
+    }
+
+    .m-item__num {
+        min-width: 2rem;
+        font-size: 0.85rem;
+    }
+}

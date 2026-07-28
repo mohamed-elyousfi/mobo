@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+<!-- ============================================================
+     TEMPLATE — do not edit menu.html directly, it is generated.
+     Edit this shell or mobo_menu.json, then run: node build-menu.js
+     ============================================================ -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Menu — MOBO Beach Club | Ajdir, Al Hoceima</title>
+    <meta name="description" content="The full MOBO Beach Club menu — coffee, juices, breakfast, salads, sushi, grills, pizza, pasta, burgers and desserts. Ajdir Beach, Al Hoceima, Morocco.">
+
+    <link rel="icon" href="assets/favicon.jpg" type="image/jpeg">
+    <link rel="apple-touch-icon" href="assets/favicon.jpg">
+    <meta name="theme-color" content="#1b342f">
+
+    <meta property="og:type" content="restaurant">
+    <meta property="og:site_name" content="MOBO Beach Club">
+    <meta property="og:title" content="Menu — MOBO Beach Club">
+    <meta property="og:description" content="Coffee, juices, breakfast, salads, sushi, grills, pizza, burgers and desserts. Open daily 10 AM – 03 AM.">
+    <meta property="og:image" content="https://example.com/assets/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <script>
+        (function () {
+            try {
+                var saved = localStorage.getItem("mobo-theme");
+                document.documentElement.dataset.theme =
+                    saved || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+            } catch (e) {
+                document.documentElement.dataset.theme = "light";
+            }
+        })();
+    </script>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="menu.css">
+    <script defer src="index.js"></script>
+    <script defer src="menu.js"></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="nav" id="nav">
+        <div class="nav__inner">
+
+            <a class="nav__logo" href="index.html" aria-label="MOBO Beach Club — home">
+                <img class="nav__logo-img nav__logo-img--light" src="assets/logo/whitelogo.webp"
+                     width="1254" height="1254" alt="MOBO Beach Club"
+                     fetchpriority="high" decoding="async">
+                <img class="nav__logo-img nav__logo-img--dark" src="assets/logo/blacklogo.webp"
+                     width="1254" height="1254" alt="" aria-hidden="true" decoding="async">
+            </a>
+
+            <nav class="nav__menu" id="nav-menu" aria-label="Main">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="index.html#hero">Home</a></li>
+                    <li class="nav__item"><a class="nav__link is-active" href="menu.html" aria-current="page">Menu</a></li>
+                    <li class="nav__item"><a class="nav__link" href="index.html#gallery">Gallery</a></li>
+                    <li class="nav__item"><a class="nav__link" href="index.html#about">About</a></li>
+                    <li class="nav__item"><a class="nav__link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav__actions">
+                <a class="nav__cta" href="index.html#contact">Find Us</a>
+
+                <button class="nav__theme" id="theme-toggle" type="button"
+                        aria-label="Switch to dark mode" aria-pressed="false">
+                    <svg class="nav__icon nav__icon--moon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" />
+                    </svg>
+                    <svg class="nav__icon nav__icon--sun" viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="12" cy="12" r="4.2" />
+                        <path d="M12 2.2v2.3M12 19.5v2.3M4.5 4.5l1.6 1.6M17.9 17.9l1.6 1.6M2.2 12h2.3M19.5 12h2.3M4.5 19.5l1.6-1.6M17.9 6.1l1.6-1.6" />
+                    </svg>
+                </button>
+
+                <button class="nav__burger" id="nav-burger" type="button"
+                        aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+                    <span class="nav__burger-bars" aria-hidden="true"></span>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <main id="main">
+
+        <section class="m-head">
+            <div class="m-head__inner">
+                <span class="m-head__topper">MOBO</span>
+                <svg class="m-head__wave" viewBox="0 0 120 12" aria-hidden="true">
+                    <path d="M1 7.5c9-8 18 4 27-1s18-7.5 27-2.5 18 7 27 2 15-5 37-1" />
+                </svg>
+                <h1 class="m-head__title">Our Menu</h1>
+            </div>
+        </section>
+
+        <div class="m-tabs" id="m-tabs" aria-label="Menu sections">
+            <div class="m-tabs__list">
+                <a class="m-tab" href="#drinks" data-group="drinks" id="tab-drinks">Drinks</a>
+<a class="m-tab" href="#breakfast" data-group="breakfast" id="tab-breakfast">Breakfast</a>
+<a class="m-tab" href="#starters" data-group="starters" id="tab-starters">Starters &amp; Salads</a>
+<a class="m-tab" href="#sushi" data-group="sushi" id="tab-sushi">Sushi</a>
+<a class="m-tab" href="#mains" data-group="mains" id="tab-mains">Mains</a>
+<a class="m-tab" href="#desserts" data-group="desserts" id="tab-desserts">Desserts</a>
+<a class="m-tab" href="#kids" data-group="kids" id="tab-kids">Kids</a>
+            </div>
+        </div>
+
+        <div class="m-body" id="m-body">
+            <section class="m-panel" id="drinks" data-group="drinks" aria-labelledby="tab-drinks">
+<div class="m-sub">
+<label class="m-sub__label" for="sub-drinks">Filter Drinks</label>
+<select class="m-sub__select" id="sub-drinks"><option value="all">All Drinks</option>
+<option value="hot-drinks">Hot Drinks</option>
+<option value="iced-coffee">Iced Coffee</option>
+<option value="matcha">Matcha</option>
+<option value="cold-drinks">Cold Drinks</option>
+<option value="juices">Juices</option>
+<option value="mojito-s">Mojito's</option>
+<option value="smoothies">Smoothies</option></select>
+<ul class="m-sub__list"><li><a class="m-sub__chip" href="#drinks" data-sub="all">All</a></li>
+<li><a class="m-sub__chip" href="#drinks/hot-drinks" data-sub="hot-drinks">Hot Drinks</a></li>
+<li><a class="m-sub__chip" href="#drinks/iced-coffee" data-sub="iced-coffee">Iced Coffee</a></li>
+<li><a class="m-sub__chip" href="#drinks/matcha" data-sub="matcha">Matcha</a></li>
+<li><a class="m-sub__chip" href="#drinks/cold-drinks" data-sub="cold-drinks">Cold Drinks</a></li>
+<li><a class="m-sub__chip" href="#drinks/juices" data-sub="juices">Juices</a></li>
+<li><a class="m-sub__chip" href="#drinks/mojito-s" data-sub="mojito-s">Mojito's</a></li>
+<li><a class="m-sub__chip" href="#drinks/smoothies" data-sub="smoothies">Smoothies</a></li></ul>
+</div>
+<div class="m-cats">
+<section class="m-cat" id="hot-drinks" data-sub="hot-drinks" aria-labelledby="hot-drinks-h">
+<h2 class="m-cat__title" id="hot-drinks-h">Hot Drinks</h2>
+<p class="m-cat__note">Choice of: coconut milk, oat milk, vanilla milk.</p>
+<ul class="m-list">
+<li class="m-item"><span class="m-item__num" aria-hidden="true">1</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Espresso</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">25&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">2</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Double Espresso</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">35&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">3</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Cortado</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">30&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">4</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Cappuccino</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">35&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">5</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Café Crème</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">35&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">6</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Café Latte</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">35&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">7</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Latte Macchiato</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">35&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">8</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Moroccan Mint Tea</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">25&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">9</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Special Tea</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">35&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">10</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Dutch Tea</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">35&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">11</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Verbena Tea (Louisa)</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">25&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">12</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Lipton Black Tea</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">25&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">13</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Hot Chocolate</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">35&nbsp;dh</span></div></div></li>
+</ul>
+</section>
+
+<section class="m-cat" id="iced-coffee" data-sub="iced-coffee" aria-labelledby="iced-coffee-h">
+<h2 class="m-cat__title" id="iced-coffee-h">Iced Coffee</h2>
+
+<ul class="m-list">
+<li class="m-item"><span class="m-item__num" aria-hidden="true">14</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Iced Americano</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">55&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">15</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Caramel Iced Coffee</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">65&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">16</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Vanilla Iced Coffee</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">65&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">17</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Coconut Iced Coffee</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">70&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">18</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Cinnamon Sugar Cloud</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">75&nbsp;dh</span></div></div></li>
+</ul>
+</section>
+
+<section class="m-cat" id="matcha" data-sub="matcha" aria-labelledby="matcha-h">
+<h2 class="m-cat__title" id="matcha-h">Matcha</h2>
+
+<ul class="m-list">
+<li class="m-item"><span class="m-item__num" aria-hidden="true">19</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Classic Matcha</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">70&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">20</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Strawberry Matcha</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">80&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">21</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Mango Matcha</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">80&nbsp;dh</span></div></div></li>
+</ul>
+</section>
+
+<section class="m-cat" id="cold-drinks" data-sub="cold-drinks" aria-labelledby="cold-drinks-h">
+<h2 class="m-cat__title" id="cold-drinks-h">Cold Drinks</h2>
+
+<ul class="m-list">
+<li class="m-item"><span class="m-item__num" aria-hidden="true">22</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Water (50 cl)</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">20&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">23</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Water (75 cl)</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">45&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">24</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Sparkling Water (25 cl)</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">25&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">25</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Sparkling Water (75 cl)</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">50&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">26</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Coca-Cola</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">30&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">27</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Coca-Cola Zero</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">30&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">28</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Fanta Orange</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">30&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">29</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Fanta Lemon</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">30&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">30</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Hawaï</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">30&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">31</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Poms</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">30&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">32</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Schweppes Tonic</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">30&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">33</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Schweppes Lemon</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">30&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">34</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Schweppes Ginger Ale</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">50&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">35</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Red Bull</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">55&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">36</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Fernandes Green</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">40&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">37</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Fernandes Cherry</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">40&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">38</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Oasis</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">40&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">39</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">AA Drink</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">40&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">40</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Capri-Sun</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">40&nbsp;dh</span></div></div></li>
+</ul>
+</section>
+
+<section class="m-cat" id="juices" data-sub="juices" aria-labelledby="juices-h">
+<h2 class="m-cat__title" id="juices-h">Juices</h2>
+
+<ul class="m-list">
+<li class="m-item"><span class="m-item__num" aria-hidden="true">41</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Orange Juice</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">55&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">42</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Carrot &amp; Orange Juice</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">55&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">43</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Banana Juice</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">60&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">44</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Strawberry Juice</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">65&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">45</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Mango Juice</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">65&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">46</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Avocado Juice</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">65&nbsp;dh</span></div></div></li>
+</ul>
+</section>
+
+<section class="m-cat" id="mojito-s" data-sub="mojito-s" aria-labelledby="mojito-s-h">
+<h2 class="m-cat__title" id="mojito-s-h">Mojito's</h2>
+
+<ul class="m-list">
+<li class="m-item"><span class="m-item__num" aria-hidden="true">47</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Classic Mojito</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">55&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">48</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Coca-Cola Mojito</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">55&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">49</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Strawberry Mojito</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">65&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">50</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Passion Fruit Mojito</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">65&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">51</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Watermelon Mojito</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">65&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">52</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Red Bull Mojito</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">80&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">53</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">MOBO Mojito</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">85&nbsp;dh</span></div></div></li>
+</ul>
+</section>
+
+<section class="m-cat" id="smoothies" data-sub="smoothies" aria-labelledby="smoothies-h">
+<h2 class="m-cat__title" id="smoothies-h">Smoothies</h2>
+
+<ul class="m-list">
+<li class="m-item"><span class="m-item__num" aria-hidden="true">54</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Lemon Ginger Detox</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">45&nbsp;dh</span></div><p class="m-item__desc">Lemon, ginger</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">55</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Piña Colada</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">65&nbsp;dh</span></div><p class="m-item__desc">Pineapple, coconut</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">56</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Red Smoothie</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">85&nbsp;dh</span></div><p class="m-item__desc">Strawberry, blueberry, orange</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">57</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Cannelle Smoothie</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">85&nbsp;dh</span></div><p class="m-item__desc">Mango, banana, yogurt, cinnamon and orange</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">58</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Orange Smoothie</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">85&nbsp;dh</span></div><p class="m-item__desc">Mango, banana, carrot and orange</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">59</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Bora Bora Smoothie</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">85&nbsp;dh</span></div><p class="m-item__desc">Pineapple, mango, strawberry</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">60</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Tropical</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">85&nbsp;dh</span></div><p class="m-item__desc">Seasonal fruit mix</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">61</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">MOBO</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">90&nbsp;dh</span></div><p class="m-item__desc">Coconut milk, banana, pineapple</p></div></li>
+</ul>
+</section>
+</div>
+</section>
+
+<section class="m-panel" id="breakfast" data-group="breakfast" aria-labelledby="tab-breakfast">
+<div class="m-sub">
+<label class="m-sub__label" for="sub-breakfast">Filter Breakfast</label>
+<select class="m-sub__select" id="sub-breakfast"><option value="all">All Breakfast</option>
+<option value="breakfast">Breakfast</option>
+<option value="bagel-toast">Bagel / Toast</option>
+<option value="french-toast">French Toast</option>
+<option value="our-menu-selection">Our Menu Selection</option></select>
+<ul class="m-sub__list"><li><a class="m-sub__chip" href="#breakfast" data-sub="all">All</a></li>
+<li><a class="m-sub__chip" href="#breakfast/breakfast" data-sub="breakfast">Breakfast</a></li>
+<li><a class="m-sub__chip" href="#breakfast/bagel-toast" data-sub="bagel-toast">Bagel / Toast</a></li>
+<li><a class="m-sub__chip" href="#breakfast/french-toast" data-sub="french-toast">French Toast</a></li>
+<li><a class="m-sub__chip" href="#breakfast/our-menu-selection" data-sub="our-menu-selection">Our Menu Selection</a></li></ul>
+</div>
+<div class="m-cats">
+<section class="m-cat" id="breakfast" data-sub="breakfast" aria-labelledby="breakfast-h">
+<h2 class="m-cat__title" id="breakfast-h">Breakfast</h2>
+
+<ul class="m-list">
+<li class="m-item"><span class="m-item__num" aria-hidden="true">1</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Traditional</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">90&nbsp;dh</span></div><p class="m-item__desc">Msemmen, harcha, eggs of your choice (boiled, fried or cheese omelette), olive oil, jam and butter. Includes a hot drink, a fresh juice of your choice, and mineral water.</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">2</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">MOBO</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">130&nbsp;dh</span></div><p class="m-item__desc">Toast with scrambled eggs, avocado and smoked salmon, served with fresh fruit yogurt and granola. Includes a hot drink, a fresh juice of your choice, and mineral water.</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">3</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Kids</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">70&nbsp;dh</span></div><p class="m-item__desc">2 eggs of your choice (boiled or fried), cornflakes, hot chocolate and a pain au chocolat. Mini-crêpe, orange juice and mineral water.</p></div></li>
+</ul>
+</section>
+
+<section class="m-cat" id="bagel-toast" data-sub="bagel-toast" aria-labelledby="bagel-toast-h">
+<h2 class="m-cat__title" id="bagel-toast-h">Bagel / Toast</h2>
+
+<ul class="m-list">
+<li class="m-item"><span class="m-item__num" aria-hidden="true">4</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Bagel / Toast Cheese</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">80&nbsp;dh</span></div><p class="m-item__desc">Scrambled eggs and cheddar</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">5</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Bagel / Toast Avocado</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">85&nbsp;dh</span></div><p class="m-item__desc">Cheese, avocado, scrambled eggs and walnuts</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">6</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Bagel / Toast Chicken</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">90&nbsp;dh</span></div><p class="m-item__desc">Cheddar cheese, chicken fillet, tomato and avocado</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">7</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Bagel / Toast Tuna</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">90&nbsp;dh</span></div><p class="m-item__desc">Tuna, boiled egg, mayonnaise, corn and pickles</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">8</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Bagel / Toast Salmon</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">95&nbsp;dh</span></div><p class="m-item__desc">Cream cheese, scrambled eggs, avocado and smoked salmon</p></div></li>
+</ul>
+</section>
+
+<section class="m-cat" id="french-toast" data-sub="french-toast" aria-labelledby="french-toast-h">
+<h2 class="m-cat__title" id="french-toast-h">French Toast</h2>
+<p class="m-cat__note">Extras: Jben 10 dh, olive oil 10 dh, cheese 10 dh, butter 10 dh, jam 10 dh, La Vache qui Rit (cheese) 5 dh</p>
+<ul class="m-list">
+<li class="m-item"><span class="m-item__num" aria-hidden="true">9</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Honey French Toast</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">75&nbsp;dh</span></div><p class="m-item__desc">Butter, honey, cinnamon and whipped cream</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">10</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Lotus French Toast</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">80&nbsp;dh</span></div><p class="m-item__desc">Lotus, banana, honey and whipped cream</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">11</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Nutella French Toast</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">80&nbsp;dh</span></div><p class="m-item__desc">Nutella, nuts and whipped cream</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">12</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Mango French Toast</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">85&nbsp;dh</span></div><p class="m-item__desc">Mango, caramel and whipped cream</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">13</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Fruits French Toast</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">85&nbsp;dh</span></div><p class="m-item__desc">Seasonal fruit mix, honey and whipped cream</p></div></li>
+</ul>
+</section>
+
+<section class="m-cat" id="our-menu-selection" data-sub="our-menu-selection" aria-labelledby="our-menu-selection-h">
+<h2 class="m-cat__title" id="our-menu-selection-h">Our Menu Selection</h2>
+
+<ul class="m-list">
+<li class="m-item"><span class="m-item__num" aria-hidden="true">14</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Fried Eggs</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">45&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">15</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Plain Omelette</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">45&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">16</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Cheese Omelette</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">50&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">17</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Vegetable Omelette</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">50&nbsp;dh</span></div><p class="m-item__desc">Bell pepper, onion and mushrooms</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">18</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Fruit Yogurt</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">75&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">19</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Fruitboard (For 2)</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">80&nbsp;dh</span></div></div></li>
+</ul>
+</section>
+</div>
+</section>
+
+<section class="m-panel" id="starters" data-group="starters" aria-labelledby="tab-starters">
+<div class="m-sub">
+<label class="m-sub__label" for="sub-starters">Filter Starters &amp; Salads</label>
+<select class="m-sub__select" id="sub-starters"><option value="all">All Starters &amp; Salads</option>
+<option value="salads">Salads</option>
+<option value="sides">Sides</option>
+<option value="soup">Soup</option>
+<option value="poke-bowl">Poké Bowl</option></select>
+<ul class="m-sub__list"><li><a class="m-sub__chip" href="#starters" data-sub="all">All</a></li>
+<li><a class="m-sub__chip" href="#starters/salads" data-sub="salads">Salads</a></li>
+<li><a class="m-sub__chip" href="#starters/sides" data-sub="sides">Sides</a></li>
+<li><a class="m-sub__chip" href="#starters/soup" data-sub="soup">Soup</a></li>
+<li><a class="m-sub__chip" href="#starters/poke-bowl" data-sub="poke-bowl">Poké Bowl</a></li></ul>
+</div>
+<div class="m-cats">
+<section class="m-cat" id="salads" data-sub="salads" aria-labelledby="salads-h">
+<h2 class="m-cat__title" id="salads-h">Salads</h2>
+
+<ul class="m-list">
+<li class="m-item"><span class="m-item__num" aria-hidden="true">1</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Quinoa Salad</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">110&nbsp;dh</span></div><p class="m-item__desc">Quinoa, red onion, cucumber, tomato, mango, avocado, parsley, bell pepper, honey dressing</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">2</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Tuna Salad</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">110&nbsp;dh</span></div><p class="m-item__desc">Cherry tomatoes, sweet corn, avocado, cucumber, tuna, egg, black olives</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">3</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Caprese Salad</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">120&nbsp;dh</span></div><p class="m-item__desc">Avocado, cherry tomatoes, mozzarella, pesto, balsamic dressing</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">4</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Caesar Salad</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">130&nbsp;dh</span></div><p class="m-item__desc">Choice of: Chicken or Shrimp. Mixed salad, toasted croutons, cherry tomatoes, Parmesan cheese, Caesar dressing</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">5</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Exotic Shrimp Salad</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">130&nbsp;dh</span></div><p class="m-item__desc">Mixed salad, cherry tomatoes, avocado, mango, kiwi, apple, fried shrimp</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">6</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Avocado &amp; Shrimp Tartare</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">130&nbsp;dh</span></div><p class="m-item__desc">Mixed salad, avocado purée, shrimp, cocktail sauce</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">7</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Salmon Tartare</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">150&nbsp;dh</span></div><p class="m-item__desc">Mixed salad, fresh salmon, avocado, cream cheese, lemon dressing</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">8</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">MOBO Tartare</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">170&nbsp;dh</span></div><p class="m-item__desc">Shrimp, calamari, pineapple, avocado, green salad, cherry tomatoes, sweet corn, chef's sauce</p></div></li>
+</ul>
+</section>
+
+<section class="m-cat" id="sides" data-sub="sides" aria-labelledby="sides-h">
+<h2 class="m-cat__title" id="sides-h">Sides</h2>
+
+<ul class="m-list">
+<li class="m-item"><span class="m-item__num" aria-hidden="true">13</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Edamame</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">60&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">14</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Spicy Edamame</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">65&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">15</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Fried Calamari</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">90&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">16</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Chicken Spring Rolls (3 pcs)</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">90&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">17</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Beef Spring Rolls (3 pcs)</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">110&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">18</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Chicken Skewers</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">90&nbsp;dh</span></div><p class="m-item__desc">3 chicken skewers, honey-soy sauce</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">19</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Beef Skewers</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">110&nbsp;dh</span></div><p class="m-item__desc">3 beef skewers, honey-ginger sauce</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">20</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Salmon Skewers</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">120&nbsp;dh</span></div><p class="m-item__desc">3 salmon skewers, teriyaki sauce</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">21</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Shrimp Skewers</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">120&nbsp;dh</span></div><p class="m-item__desc">3 shrimp skewers, honey-teriyaki sauce</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">22</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Dynamite Shrimp</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">120&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">23</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Teppanyaki Beef</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">130&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">24</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Mussels Pil-Pil</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">130&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">25</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Shrimp Pil-Pil</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">130&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">26</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Shrimp Tempura (5 pcs)</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">140&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">27</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Lamb Chops (3 pcs)</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">140&nbsp;dh</span></div><p class="m-item__desc">Honey sauce</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">28</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Oysters</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">190&nbsp;dh</span></div></div></li>
+</ul>
+</section>
+
+<section class="m-cat" id="soup" data-sub="soup" aria-labelledby="soup-h">
+<h2 class="m-cat__title" id="soup-h">Soup</h2>
+
+<ul class="m-list">
+<li class="m-item"><span class="m-item__num" aria-hidden="true">12</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Chinese Soup</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">110&nbsp;dh</span></div><p class="m-item__desc">(seafood)</p></div></li>
+</ul>
+</section>
+
+<section class="m-cat" id="poke-bowl" data-sub="poke-bowl" aria-labelledby="poke-bowl-h">
+<h2 class="m-cat__title" id="poke-bowl-h">Poké Bowl</h2>
+
+<ul class="m-list">
+<li class="m-item"><span class="m-item__num" aria-hidden="true">29</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Chicken Poké Bowl</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">150&nbsp;dh</span></div><p class="m-item__desc">Sushi rice, fried chicken, avocado, mango, sweet corn, wakame, edamame, crispy onions</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">30</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Salmon Poké Bowl</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">160&nbsp;dh</span></div><p class="m-item__desc">Sushi rice, marinated raw salmon, avocado, mango, edamame, cucumber, crispy onions, sesame seeds</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">31</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Shrimp Poké Bowl</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">160&nbsp;dh</span></div><p class="m-item__desc">Sushi rice, shrimp tempura, avocado, wakame, edamame, sweet corn, mango</p></div></li>
+</ul>
+</section>
+</div>
+</section>
+
+<section class="m-panel" id="sushi" data-group="sushi" aria-labelledby="tab-sushi">
+<div class="m-sub">
+<label class="m-sub__label" for="sub-sushi">Filter Sushi</label>
+<select class="m-sub__select" id="sub-sushi"><option value="all">All Sushi</option>
+<option value="japanese-art-nigiri-4-pcs">NIGIRI (4 pcs)</option>
+<option value="japanese-art-maki-8-pcs">MAKI (8 pcs)</option>
+<option value="japanese-art-california-8-pcs">CALIFORNIA (8 pcs)</option>
+<option value="japanese-art-aromaki-8-pcs">AROMAKI (8 pcs)</option>
+<option value="japanese-art-special-rolls-rice-paper-5-pcs">SPECIAL ROLLS (Rice paper, 5 pcs)</option>
+<option value="japanese-art-crunchy-rolls-6-pcs">CRUNCHY ROLLS (6 pcs)</option>
+<option value="sushi-sharing-board">Sushi Sharing Board</option></select>
+<ul class="m-sub__list"><li><a class="m-sub__chip" href="#sushi" data-sub="all">All</a></li>
+<li><a class="m-sub__chip" href="#sushi/japanese-art-nigiri-4-pcs" data-sub="japanese-art-nigiri-4-pcs">NIGIRI (4 pcs)</a></li>
+<li><a class="m-sub__chip" href="#sushi/japanese-art-maki-8-pcs" data-sub="japanese-art-maki-8-pcs">MAKI (8 pcs)</a></li>
+<li><a class="m-sub__chip" href="#sushi/japanese-art-california-8-pcs" data-sub="japanese-art-california-8-pcs">CALIFORNIA (8 pcs)</a></li>
+<li><a class="m-sub__chip" href="#sushi/japanese-art-aromaki-8-pcs" data-sub="japanese-art-aromaki-8-pcs">AROMAKI (8 pcs)</a></li>
+<li><a class="m-sub__chip" href="#sushi/japanese-art-special-rolls-rice-paper-5-pcs" data-sub="japanese-art-special-rolls-rice-paper-5-pcs">SPECIAL ROLLS (Rice paper, 5 pcs)</a></li>
+<li><a class="m-sub__chip" href="#sushi/japanese-art-crunchy-rolls-6-pcs" data-sub="japanese-art-crunchy-rolls-6-pcs">CRUNCHY ROLLS (6 pcs)</a></li>
+<li><a class="m-sub__chip" href="#sushi/sushi-sharing-board" data-sub="sushi-sharing-board">Sushi Sharing Board</a></li></ul>
+</div>
+<div class="m-cats">
+<section class="m-cat" id="japanese-art-nigiri-4-pcs" data-sub="japanese-art-nigiri-4-pcs" aria-labelledby="japanese-art-nigiri-4-pcs-h">
+<h2 class="m-cat__title" id="japanese-art-nigiri-4-pcs-h">Japanese Art - NIGIRI (4 pcs)</h2>
+
+<ul class="m-list">
+<li class="m-item"><span class="m-item__num" aria-hidden="true">32</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Nigiri Salmon</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">80&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">33</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Nigiri Shrimp</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">80&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">34</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Nigiri Salmon &amp; Avocado</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">85&nbsp;dh</span></div></div></li>
+</ul>
+</section>
+
+<section class="m-cat" id="japanese-art-maki-8-pcs" data-sub="japanese-art-maki-8-pcs" aria-labelledby="japanese-art-maki-8-pcs-h">
+<h2 class="m-cat__title" id="japanese-art-maki-8-pcs-h">Japanese Art - MAKI (8 pcs)</h2>
+
+<ul class="m-list">
+<li class="m-item"><span class="m-item__num" aria-hidden="true">35</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Maki Cucumber</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">60&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">36</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Maki Avocado</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">60&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">37</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Maki Fried Chicken</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">60&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">38</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Maki Salmon</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">70&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">39</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Maki Salmon &amp; Avocado</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">75&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">40</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Maki Shrimp</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">75&nbsp;dh</span></div></div></li>
+</ul>
+</section>
+
+<section class="m-cat" id="japanese-art-california-8-pcs" data-sub="japanese-art-california-8-pcs" aria-labelledby="japanese-art-california-8-pcs-h">
+<h2 class="m-cat__title" id="japanese-art-california-8-pcs-h">Japanese Art - CALIFORNIA (8 pcs)</h2>
+
+<ul class="m-list">
+<li class="m-item"><span class="m-item__num" aria-hidden="true">41</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">California Classic</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">120&nbsp;dh</span></div><p class="m-item__desc">Surimi, cucumber, avocado, tobiko</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">42</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">California Chicken</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">120&nbsp;dh</span></div><p class="m-item__desc">Fried chicken, avocado, surimi</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">43</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Ebi Fry</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">130&nbsp;dh</span></div><p class="m-item__desc">Fried shrimp, avocado, chives</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">44</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">California Salmon</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">130&nbsp;dh</span></div><p class="m-item__desc">Salmon, avocado, mango, cream cheese</p></div></li>
+</ul>
+</section>
+
+<section class="m-cat" id="japanese-art-aromaki-8-pcs" data-sub="japanese-art-aromaki-8-pcs" aria-labelledby="japanese-art-aromaki-8-pcs-h">
+<h2 class="m-cat__title" id="japanese-art-aromaki-8-pcs-h">Japanese Art - AROMAKI (8 pcs)</h2>
+
+<ul class="m-list">
+<li class="m-item"><span class="m-item__num" aria-hidden="true">45</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Aromaki Chicken</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">110&nbsp;dh</span></div><p class="m-item__desc">Fried chicken, mango, surimi, tobiko</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">46</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Aromaki Mango</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">120&nbsp;dh</span></div><p class="m-item__desc">Salmon, mango, surimi, tobiko</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">47</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Aromaki Salmon</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">120&nbsp;dh</span></div><p class="m-item__desc">Salmon, avocado, surimi, tobiko</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">48</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Aromaki Ebi Shrimp</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">120&nbsp;dh</span></div><p class="m-item__desc">Ebi shrimp, avocado, mango, surimi</p></div></li>
+</ul>
+</section>
+
+<section class="m-cat" id="japanese-art-special-rolls-rice-paper-5-pcs" data-sub="japanese-art-special-rolls-rice-paper-5-pcs" aria-labelledby="japanese-art-special-rolls-rice-paper-5-pcs-h">
+<h2 class="m-cat__title" id="japanese-art-special-rolls-rice-paper-5-pcs-h">Japanese Art - SPECIAL ROLLS (Rice paper, 5 pcs)</h2>
+
+<ul class="m-list">
+<li class="m-item"><span class="m-item__num" aria-hidden="true">49</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Fresh Roll</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">120&nbsp;dh</span></div><p class="m-item__desc">Smoked salmon, shrimp, avocado, tobiko</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">50</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Fantasia</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">130&nbsp;dh</span></div><p class="m-item__desc">Shrimp, salmon, avocado, surimi, eel</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">51</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Hekari</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">140&nbsp;dh</span></div><p class="m-item__desc">Double shrimp, mango, tobiko, surimi</p></div></li>
+</ul>
+</section>
+
+<section class="m-cat" id="japanese-art-crunchy-rolls-6-pcs" data-sub="japanese-art-crunchy-rolls-6-pcs" aria-labelledby="japanese-art-crunchy-rolls-6-pcs-h">
+<h2 class="m-cat__title" id="japanese-art-crunchy-rolls-6-pcs-h">Japanese Art - CRUNCHY ROLLS (6 pcs)</h2>
+
+<ul class="m-list">
+<li class="m-item"><span class="m-item__num" aria-hidden="true">52</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Chicken Fry</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">85&nbsp;dh</span></div><p class="m-item__desc">Fried chicken, avocado, mango</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">53</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Crunchy Fry Ebi Fry</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">90&nbsp;dh</span></div><p class="m-item__desc">Fried shrimp, avocado, surimi</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">54</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Crunchy Ebi Fry</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">90&nbsp;dh</span></div><p class="m-item__desc">Fried shrimp, avocado, cream cheese</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">55</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Aromaki Pané</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">110&nbsp;dh</span></div><p class="m-item__desc">Fried shrimp, salmon, avocado, cream cheese</p></div></li>
+</ul>
+</section>
+
+<section class="m-cat" id="sushi-sharing-board" data-sub="sushi-sharing-board" aria-labelledby="sushi-sharing-board-h">
+<h2 class="m-cat__title" id="sushi-sharing-board-h">Sushi Sharing Board</h2>
+
+<ul class="m-list">
+<li class="m-item"><span class="m-item__num" aria-hidden="true">56</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Sushi Board (20 Pcs)</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">400&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">57</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Sushi Board (50 Pcs)</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">750&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">58</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Sushi Board (80 Pcs)</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">900&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">59</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Sushi Board (120 Pcs)</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">1250&nbsp;dh</span></div></div></li>
+</ul>
+</section>
+</div>
+</section>
+
+<section class="m-panel" id="mains" data-group="mains" aria-labelledby="tab-mains">
+<div class="m-sub">
+<label class="m-sub__label" for="sub-mains">Filter Mains</label>
+<select class="m-sub__select" id="sub-mains"><option value="all">All Mains</option>
+<option value="main-dishes">Main Dishes</option>
+<option value="grills">Grills</option>
+<option value="wok">Wok</option>
+<option value="pizza">Pizza</option>
+<option value="pasta">Pasta</option>
+<option value="burgers">Burgers</option></select>
+<ul class="m-sub__list"><li><a class="m-sub__chip" href="#mains" data-sub="all">All</a></li>
+<li><a class="m-sub__chip" href="#mains/main-dishes" data-sub="main-dishes">Main Dishes</a></li>
+<li><a class="m-sub__chip" href="#mains/grills" data-sub="grills">Grills</a></li>
+<li><a class="m-sub__chip" href="#mains/wok" data-sub="wok">Wok</a></li>
+<li><a class="m-sub__chip" href="#mains/pizza" data-sub="pizza">Pizza</a></li>
+<li><a class="m-sub__chip" href="#mains/pasta" data-sub="pasta">Pasta</a></li>
+<li><a class="m-sub__chip" href="#mains/burgers" data-sub="burgers">Burgers</a></li></ul>
+</div>
+<div class="m-cats">
+<section class="m-cat" id="main-dishes" data-sub="main-dishes" aria-labelledby="main-dishes-h">
+<h2 class="m-cat__title" id="main-dishes-h">Main Dishes</h2>
+
+<ul class="m-list">
+<li class="m-item"><span class="m-item__num" aria-hidden="true">60</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Chicken Suprême</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">200&nbsp;dh</span></div><p class="m-item__desc">Grilled chicken fillet, homemade potato purée, broccoli and mushrooms, mustard sauce</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">61</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Salmon Teppanyaki</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">200&nbsp;dh</span></div><p class="m-item__desc">Teppanyaki salmon, teriyaki sauce, seasonal vegetables</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">62</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Beef Fillet</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">240&nbsp;dh</span></div><p class="m-item__desc">Mushroom sauce, potato purée, seasonal vegetables</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">63</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Garlic Grilled Gambas</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">240&nbsp;dh</span></div><p class="m-item__desc">Sweet &amp; sour sauce, vegetables, potato purée</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">64</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Osso Buco Milanese</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">240&nbsp;dh</span></div><p class="m-item__desc">Slow-braised veal shank, herb tomato sauce, served with potato purée</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">65</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Tigre qui Pleure</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">260&nbsp;dh</span></div><p class="m-item__desc">Grilled beef, Thai sauce, stir-fried vegetables, wok noodles</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">66</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Seafood Mqila</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">290&nbsp;dh</span></div><p class="m-item__desc">Gambas, clams, mussels, calamari</p></div></li>
+</ul>
+</section>
+
+<section class="m-cat" id="grills" data-sub="grills" aria-labelledby="grills-h">
+<h2 class="m-cat__title" id="grills-h">Grills</h2>
+
+<ul class="m-list">
+<li class="m-item"><span class="m-item__num" aria-hidden="true">67</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">MIXED GRILL</h3><span class="m-item__dots" aria-hidden="true"></span></div><p class="m-item__desc">Chicken skewers, merguez, kefta, and lamb chops</p><ul class="m-variants"><li class="m-variant"><span class="m-variant__label">1 person</span><span class="m-variant__price">225&nbsp;dh</span></li><li class="m-variant"><span class="m-variant__label">4 people</span><span class="m-variant__price">900&nbsp;dh</span></li><li class="m-variant"><span class="m-variant__label">10 people</span><span class="m-variant__price">2200&nbsp;dh</span></li></ul></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">68</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Grilled Chicken Mix</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">210&nbsp;dh</span></div><p class="m-item__desc">Grilled chicken breast and 3 chicken skewers, sautéed vegetables and rice</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">69</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Mixed Beef Grill</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">230&nbsp;dh</span></div><p class="m-item__desc">Beef steak and 3 meat skewers, vegetables and rice</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">70</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Ground Beef Skewers</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">230&nbsp;dh</span></div><p class="m-item__desc">5 skewers</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">71</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">BBQ Lamb Chops</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">250&nbsp;dh</span></div><p class="m-item__desc">(5 pcs), vegetables and rice</p></div></li>
+</ul>
+</section>
+
+<section class="m-cat" id="wok" data-sub="wok" aria-labelledby="wok-h">
+<h2 class="m-cat__title" id="wok-h">Wok</h2>
+
+<ul class="m-list">
+<li class="m-item"><span class="m-item__num" aria-hidden="true">9</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Chicken Wok</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">170&nbsp;dh</span></div><p class="m-item__desc">Chicken, Vegetables. Choice of: Noodles or Cantonese rice. Choice of sauce: Teriyaki, sweet chili, or oyster sauce</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">10</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Beef Wok</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">190&nbsp;dh</span></div><p class="m-item__desc">Beef, Vegetables. Choice of: Noodles or Cantonese rice. Choice of sauce: Teriyaki, sweet chili, or oyster sauce</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">11</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Shrimp Wok</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">190&nbsp;dh</span></div><p class="m-item__desc">Shrimp, Vegetables. Choice of: Noodles or Cantonese rice. Choice of sauce: Teriyaki, sweet chili, or oyster sauce</p></div></li>
+</ul>
+</section>
+
+<section class="m-cat" id="pizza" data-sub="pizza" aria-labelledby="pizza-h">
+<h2 class="m-cat__title" id="pizza-h">Pizza</h2>
+
+<ul class="m-list">
+<li class="m-item"><span class="m-item__num" aria-hidden="true">72</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Margherita</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">90&nbsp;dh</span></div><p class="m-item__desc">Tomato sauce, mozzarella, basil, black olives</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">73</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Vegetarian</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">100&nbsp;dh</span></div><p class="m-item__desc">Tomato sauce, mozzarella, grilled vegetables</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">74</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">4 Cheese</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">110&nbsp;dh</span></div><p class="m-item__desc">Cream sauce, mozzarella, blue cheese, Parmesan</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">75</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Tuna</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">120&nbsp;dh</span></div><p class="m-item__desc">Tomato sauce, tuna, mozzarella, black olives, bell pepper</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">76</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Caesar</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">130&nbsp;dh</span></div><p class="m-item__desc">Cream sauce, mozzarella, black olives, chicken, mushrooms, cherry tomatoes, arugula</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">77</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Classic Ground Beef Pizza</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">130&nbsp;dh</span></div><p class="m-item__desc">Tomato sauce, mozzarella, ground beef, mushrooms, black olives</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">78</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Cheese Pepperoni</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">130&nbsp;dh</span></div><p class="m-item__desc">Tomato sauce, mozzarella, pepperoni</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">79</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Frutti di Mare</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">135&nbsp;dh</span></div><p class="m-item__desc">Tomato sauce, mozzarella, shrimp, calamari, mussels, mushrooms</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">80</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">MOBO</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">140&nbsp;dh</span></div><p class="m-item__desc">Cream sauce, salmon, mozzarella, arugula, cherry tomatoes</p></div></li>
+</ul>
+</section>
+
+<section class="m-cat" id="pasta" data-sub="pasta" aria-labelledby="pasta-h">
+<h2 class="m-cat__title" id="pasta-h">Pasta</h2>
+<p class="m-cat__note">Spaghetti, tagliatelle or penne</p>
+<ul class="m-list">
+<li class="m-item"><span class="m-item__num" aria-hidden="true">81</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Pollo à la Panna</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">120&nbsp;dh</span></div><p class="m-item__desc">Cream sauce, chicken, mushrooms, garlic</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">82</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Bolognese</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">130&nbsp;dh</span></div><p class="m-item__desc">Tomato sauce, ground beef, Parmesan, garlic</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">83</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Gamberoni</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">130&nbsp;dh</span></div><p class="m-item__desc">Gambas, chili, bisque, cherry tomatoes, mushrooms, basil, olive oil, lemon juice</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">84</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Frutti di Mare</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">135&nbsp;dh</span></div><p class="m-item__desc">Tomato or cream sauce, seafood, lemon juice, garlic</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">85</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Alle Vongole</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">140&nbsp;dh</span></div><p class="m-item__desc">Fresh clams, fish broth, cherry tomatoes, parsley, garlic, chili</p></div></li>
+</ul>
+</section>
+
+<section class="m-cat" id="burgers" data-sub="burgers" aria-labelledby="burgers-h">
+<h2 class="m-cat__title" id="burgers-h">Burgers</h2>
+
+<ul class="m-list">
+<li class="m-item"><span class="m-item__num" aria-hidden="true">86</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Cheeseburger</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">100&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">87</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Crispy Chicken Burger</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">100&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">88</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Fried Egg Burger</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">120&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">89</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Double Cheeseburger</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">160&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">90</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Smashed Burger</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">160&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">91</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Golden MOBO Burger</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">190&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">92</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">MOBO Fish Burger</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">190&nbsp;dh</span></div></div></li>
+</ul>
+</section>
+</div>
+</section>
+
+<section class="m-panel" id="desserts" data-group="desserts" aria-labelledby="tab-desserts">
+<div class="m-sub">
+<label class="m-sub__label" for="sub-desserts">Filter Desserts</label>
+<select class="m-sub__select" id="sub-desserts"><option value="all">All Desserts</option>
+<option value="desserts">Desserts</option>
+<option value="sweet-crepes">Sweet Crêpes</option></select>
+<ul class="m-sub__list"><li><a class="m-sub__chip" href="#desserts" data-sub="all">All</a></li>
+<li><a class="m-sub__chip" href="#desserts/desserts" data-sub="desserts">Desserts</a></li>
+<li><a class="m-sub__chip" href="#desserts/sweet-crepes" data-sub="sweet-crepes">Sweet Crêpes</a></li></ul>
+</div>
+<div class="m-cats">
+<section class="m-cat" id="desserts" data-sub="desserts" aria-labelledby="desserts-h">
+<h2 class="m-cat__title" id="desserts-h">Desserts</h2>
+
+<ul class="m-list">
+<li class="m-item"><span class="m-item__num" aria-hidden="true">62</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Tiramisu</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">65&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">63</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Cheesecake</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">65&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">64</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Brownie</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">65&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">65</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Carrot Cake</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">75&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">66</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">San Sebastián Cheesecake</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">75&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">67</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Cookies</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">75&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">68</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Fruitboard (For 2)</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">80&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">68</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Fruitboard (For 4)</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">160&nbsp;dh</span></div></div></li>
+</ul>
+</section>
+
+<section class="m-cat" id="sweet-crepes" data-sub="sweet-crepes" aria-labelledby="sweet-crepes-h">
+<h2 class="m-cat__title" id="sweet-crepes-h">Sweet Crêpes</h2>
+<p class="m-cat__note">Extras: Jben 10 dh, olive oil 10 dh, cheese 10 dh, butter 10 dh, jam 10 dh, La Vache qui Rit (cheese) 5 dh</p>
+<ul class="m-list">
+<li class="m-item"><span class="m-item__num" aria-hidden="true">20</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Plain</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">45&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">21</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Honey</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">50&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">22</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Nutella</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">70&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">23</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Amlou</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">70&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">24</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Nutella &amp; Banana</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">80&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">25</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Lotus</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">80&nbsp;dh</span></div></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">26</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Dubai Pistachio</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">100&nbsp;dh</span></div></div></li>
+</ul>
+</section>
+</div>
+</section>
+
+<section class="m-panel" id="kids" data-group="kids" aria-labelledby="tab-kids">
+<div class="m-sub">
+<label class="m-sub__label" for="sub-kids">Filter Kids</label>
+<select class="m-sub__select" id="sub-kids"><option value="all">All Kids</option>
+<option value="kids-menu">Kids MENU</option></select>
+<ul class="m-sub__list"><li><a class="m-sub__chip" href="#kids" data-sub="all">All</a></li>
+<li><a class="m-sub__chip" href="#kids/kids-menu" data-sub="kids-menu">Kids MENU</a></li></ul>
+</div>
+<div class="m-cats">
+<section class="m-cat" id="kids-menu" data-sub="kids-menu" aria-labelledby="kids-menu-h">
+<h2 class="m-cat__title" id="kids-menu-h">Kids MENU</h2>
+
+<ul class="m-list">
+<li class="m-item"><span class="m-item__num" aria-hidden="true">93</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Cheeseburger Menu</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">130&nbsp;dh</span></div><p class="m-item__desc">Drink, fries</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">94</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Nuggets Menu</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">130&nbsp;dh</span></div><p class="m-item__desc">Drink, fries</p></div></li><li class="m-item"><span class="m-item__num" aria-hidden="true">95</span><div class="m-item__body"><div class="m-item__head"><h3 class="m-item__name">Chicken Burger Menu</h3><span class="m-item__dots" aria-hidden="true"></span><span class="m-item__price">130&nbsp;dh</span></div><p class="m-item__desc">Drink, fries</p></div></li>
+</ul>
+</section>
+</div>
+</section>
+        </div>
+
+    </main>
+
+    <footer class="foot">
+
+        <!-- Long, low swell — the fourth divider, and deliberately the calmest. -->
+        <svg class="foot__edge" viewBox="0 0 1920 70" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M1920 70H0V56.77L11.29 57.35L22.59 57.92L33.88 58.46L45.18 58.97L56.47 59.46L67.76 59.91L79.06 60.34L90.35 60.74L101.65 61.1L112.94 61.43L124.24 61.73L135.53 61.99L146.82 62.22L158.12 62.41L169.41 62.56L180.71 62.68L192 62.76L203.29 62.8L214.59 62.81L225.88 62.77L237.18 62.7L248.47 62.59L259.76 62.44L271.06 62.25L282.35 62.02L293.65 61.76L304.94 61.46L316.24 61.12L327.53 60.75L338.82 60.34L350.12 59.9L361.41 59.42L372.71 58.91L384 58.37L395.29 57.8L406.59 57.2L417.88 56.57L429.18 55.91L440.47 55.23L451.76 54.52L463.06 53.79L474.35 53.03L485.65 52.26L496.94 51.47L508.24 50.66L519.53 49.83L530.82 48.99L542.12 48.14L553.41 47.28L564.71 46.4L576 45.52L587.29 44.64L598.59 43.75L609.88 42.85L621.18 41.96L632.47 41.06L643.76 40.17L655.06 39.28L666.35 38.4L677.65 37.52L688.94 36.65L700.24 35.79L711.53 34.94L722.82 34.11L734.12 33.28L745.41 32.47L756.71 31.68L768 30.9L779.29 30.14L790.59 29.4L801.88 28.68L813.18 27.97L824.47 27.29L835.76 26.63L847.06 25.99L858.35 25.38L869.65 24.79L880.94 24.22L892.24 23.67L903.53 23.15L914.82 22.65L926.12 22.18L937.41 21.72L948.71 21.3L960 20.9L971.29 20.52L982.59 20.16L993.88 19.83L1005.18 19.51L1016.47 19.23L1027.76 18.96L1039.06 18.71L1050.35 18.48L1061.65 18.28L1072.94 18.09L1084.24 17.92L1095.53 17.76L1106.82 17.63L1118.12 17.51L1129.41 17.4L1140.71 17.31L1152 17.23L1163.29 17.16L1174.59 17.11L1185.88 17.06L1197.18 17.02L1208.47 17L1219.76 16.98L1231.06 16.96L1242.35 16.95L1253.65 16.95L1264.94 16.95L1276.24 16.96L1287.53 16.96L1298.82 16.97L1310.12 16.98L1321.41 16.99L1332.71 17L1344 17.01L1355.29 17.02L1366.59 17.03L1377.88 17.03L1389.18 17.03L1400.47 17.03L1411.76 17.03L1423.06 17.02L1434.35 17.01L1445.65 17L1456.94 16.99L1468.24 16.97L1479.53 16.94L1490.82 16.92L1502.12 16.89L1513.41 16.86L1524.71 16.83L1536 16.79L1547.29 16.76L1558.59 16.72L1569.88 16.68L1581.18 16.65L1592.47 16.61L1603.76 16.58L1615.06 16.55L1626.35 16.52L1637.65 16.5L1648.94 16.48L1660.24 16.47L1671.53 16.46L1682.82 16.46L1694.12 16.47L1705.41 16.49L1716.71 16.52L1728 16.56L1739.29 16.61L1750.59 16.68L1761.88 16.76L1773.18 16.85L1784.47 16.96L1795.76 17.09L1807.06 17.23L1818.35 17.4L1829.65 17.58L1840.94 17.78L1852.24 18L1863.53 18.25L1874.82 18.51L1886.12 18.8L1897.41 19.11L1908.71 19.44L1920 19.8V70Z" />
+        </svg>
+
+        <div class="foot__inner">
+
+            <div class="foot__brand">
+
+            <img class="foot__logo" src="assets/logo/blacklogo.webp" width="1254" height="1254"
+                 alt="MOBO Beach Club" loading="lazy" decoding="async">
+
+            <p class="foot__name">MOBO Beach Club</p>
+            <p class="foot__tag">10 AM to 03 AM · Pool • Beach • Restaurant • Cafe • Open Daily</p>
+
+            <ul class="foot__social">
+                <li>
+                    <a href="https://www.instagram.com/moboalhoceima" target="_blank"
+                       rel="noopener noreferrer" aria-label="MOBO on Instagram">
+                        <svg viewBox="0 0 24 24" class="foot__icon foot__icon--stroke" aria-hidden="true">
+                            <rect x="2" y="2" width="20" height="20" rx="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://web.facebook.com/p/Mobo-Al-Hoceima-61560132773730/" target="_blank"
+                       rel="noopener noreferrer" aria-label="MOBO on Facebook">
+                        <svg viewBox="0 0 24 24" class="foot__icon foot__icon--stroke" aria-hidden="true">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.tiktok.com/@moboalhoceima" target="_blank"
+                       rel="noopener noreferrer" aria-label="MOBO on TikTok">
+                        <svg viewBox="0 0 24 24" class="foot__icon" aria-hidden="true">
+                            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1 0-5.78 2.92 2.92 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 3 15.57 6.33 6.33 0 0 0 9.37 22a6.33 6.33 0 0 0 6.37-6.22V9.4a8.16 8.16 0 0 0 3.85.96V7.11a4.85 4.85 0 0 1-.01-.42z" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://api.whatsapp.com/send?phone=212648893510" target="_blank"
+                       rel="noopener noreferrer" aria-label="MOBO on WhatsApp">
+                        <svg viewBox="0 0 24 24" class="foot__icon" aria-hidden="true">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+            </div>
+
+            <div class="foot__contact">
+                <h2 class="foot__contact-h">Contact</h2>
+                <ul class="foot__contact-list">
+                    <li>
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z" />
+                        </svg>
+                        <a href="tel:+212648893510">+212 648 893 510</a>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        <a href="https://maps.app.goo.gl/h8HUVmPK9J8184uY7" target="_blank" rel="noopener noreferrer">
+                            Ajdir Beach<br>Al Hoceima, Morocco
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <p class="foot__legal">© <span id="foot-year">2026</span> MOBO Beach Club · Ajdir, Al Hoceima</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
