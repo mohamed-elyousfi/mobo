@@ -1,0 +1,1537 @@
+{
+  "restaurant": "MOBO",
+  "menu": [
+    {
+      "page": 1,
+      "category": "Hot Drinks",
+      "note": "Choice of: coconut milk, oat milk, vanilla milk.",
+      "items": [
+        {
+          "number": 1,
+          "name": "Espresso",
+          "price": 25,
+          "currency": "dh"
+        },
+        {
+          "number": 2,
+          "name": "Double Espresso",
+          "price": 35,
+          "currency": "dh"
+        },
+        {
+          "number": 3,
+          "name": "Cortado",
+          "price": 30,
+          "currency": "dh"
+        },
+        {
+          "number": 4,
+          "name": "Cappuccino",
+          "price": 35,
+          "currency": "dh"
+        },
+        {
+          "number": 5,
+          "name": "Café Crème",
+          "price": 35,
+          "currency": "dh"
+        },
+        {
+          "number": 6,
+          "name": "Café Latte",
+          "price": 35,
+          "currency": "dh"
+        },
+        {
+          "number": 7,
+          "name": "Latte Macchiato",
+          "price": 35,
+          "currency": "dh"
+        },
+        {
+          "number": 8,
+          "name": "Moroccan Mint Tea",
+          "price": 25,
+          "currency": "dh"
+        },
+        {
+          "number": 9,
+          "name": "Special Tea",
+          "price": 35,
+          "currency": "dh"
+        },
+        {
+          "number": 10,
+          "name": "Dutch Tea",
+          "price": 35,
+          "currency": "dh"
+        },
+        {
+          "number": 11,
+          "name": "Verbena Tea (Louisa)",
+          "price": 25,
+          "currency": "dh"
+        },
+        {
+          "number": 12,
+          "name": "Lipton Black Tea",
+          "price": 25,
+          "currency": "dh"
+        },
+        {
+          "number": 13,
+          "name": "Hot Chocolate",
+          "price": 35,
+          "currency": "dh"
+        }
+      ]
+    },
+    {
+      "page": 1,
+      "category": "Iced Coffee",
+      "items": [
+        {
+          "number": 14,
+          "name": "Iced Americano",
+          "price": 55,
+          "currency": "dh"
+        },
+        {
+          "number": 15,
+          "name": "Caramel Iced Coffee",
+          "price": 65,
+          "currency": "dh"
+        },
+        {
+          "number": 16,
+          "name": "Vanilla Iced Coffee",
+          "price": 65,
+          "currency": "dh"
+        },
+        {
+          "number": 17,
+          "name": "Coconut Iced Coffee",
+          "price": 70,
+          "currency": "dh"
+        },
+        {
+          "number": 18,
+          "name": "Cinnamon Sugar Cloud",
+          "price": 75,
+          "currency": "dh"
+        }
+      ]
+    },
+    {
+      "page": 1,
+      "category": "Matcha",
+      "items": [
+        {
+          "number": 19,
+          "name": "Classic Matcha",
+          "price": 70,
+          "currency": "dh"
+        },
+        {
+          "number": 20,
+          "name": "Strawberry Matcha",
+          "price": 80,
+          "currency": "dh"
+        },
+        {
+          "number": 21,
+          "name": "Mango Matcha",
+          "price": 80,
+          "currency": "dh"
+        }
+      ]
+    },
+    {
+      "page": 1,
+      "category": "Cold Drinks",
+      "items": [
+        {
+          "number": 22,
+          "name": "Water (50 cl)",
+          "price": 20,
+          "currency": "dh"
+        },
+        {
+          "number": 23,
+          "name": "Water (75 cl)",
+          "price": 45,
+          "currency": "dh"
+        },
+        {
+          "number": 24,
+          "name": "Sparkling Water (25 cl)",
+          "price": 25,
+          "currency": "dh"
+        },
+        {
+          "number": 25,
+          "name": "Sparkling Water (75 cl)",
+          "price": 50,
+          "currency": "dh"
+        },
+        {
+          "number": 26,
+          "name": "Coca-Cola",
+          "price": 30,
+          "currency": "dh"
+        },
+        {
+          "number": 27,
+          "name": "Coca-Cola Zero",
+          "price": 30,
+          "currency": "dh"
+        },
+        {
+          "number": 28,
+          "name": "Fanta Orange",
+          "price": 30,
+          "currency": "dh"
+        },
+        {
+          "number": 29,
+          "name": "Fanta Lemon",
+          "price": 30,
+          "currency": "dh"
+        },
+        {
+          "number": 30,
+          "name": "Hawaï",
+          "price": 30,
+          "currency": "dh"
+        },
+        {
+          "number": 31,
+          "name": "Poms",
+          "price": 30,
+          "currency": "dh"
+        },
+        {
+          "number": 32,
+          "name": "Schweppes Tonic",
+          "price": 30,
+          "currency": "dh"
+        },
+        {
+          "number": 33,
+          "name": "Schweppes Lemon",
+          "price": 30,
+          "currency": "dh"
+        },
+        {
+          "number": 34,
+          "name": "Schweppes Ginger Ale",
+          "price": 50,
+          "currency": "dh"
+        },
+        {
+          "number": 35,
+          "name": "Red Bull",
+          "price": 55,
+          "currency": "dh"
+        },
+        {
+          "number": 36,
+          "name": "Fernandes Green",
+          "price": 40,
+          "currency": "dh"
+        },
+        {
+          "number": 37,
+          "name": "Fernandes Cherry",
+          "price": 40,
+          "currency": "dh"
+        },
+        {
+          "number": 38,
+          "name": "Oasis",
+          "price": 40,
+          "currency": "dh"
+        },
+        {
+          "number": 39,
+          "name": "AA Drink",
+          "price": 40,
+          "currency": "dh"
+        },
+        {
+          "number": 40,
+          "name": "Capri-Sun",
+          "price": 40,
+          "currency": "dh"
+        }
+      ]
+    },
+    {
+      "page": 1,
+      "category": "Juices",
+      "items": [
+        {
+          "number": 41,
+          "name": "Orange Juice",
+          "price": 55,
+          "currency": "dh"
+        },
+        {
+          "number": 42,
+          "name": "Carrot & Orange Juice",
+          "price": 55,
+          "currency": "dh"
+        },
+        {
+          "number": 43,
+          "name": "Banana Juice",
+          "price": 60,
+          "currency": "dh"
+        },
+        {
+          "number": 44,
+          "name": "Strawberry Juice",
+          "price": 65,
+          "currency": "dh"
+        },
+        {
+          "number": 45,
+          "name": "Mango Juice",
+          "price": 65,
+          "currency": "dh"
+        },
+        {
+          "number": 46,
+          "name": "Avocado Juice",
+          "price": 65,
+          "currency": "dh"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "category": "Mojito's",
+      "items": [
+        {
+          "number": 47,
+          "name": "Classic Mojito",
+          "price": 55,
+          "currency": "dh"
+        },
+        {
+          "number": 48,
+          "name": "Coca-Cola Mojito",
+          "price": 55,
+          "currency": "dh"
+        },
+        {
+          "number": 49,
+          "name": "Strawberry Mojito",
+          "price": 65,
+          "currency": "dh"
+        },
+        {
+          "number": 50,
+          "name": "Passion Fruit Mojito",
+          "price": 65,
+          "currency": "dh"
+        },
+        {
+          "number": 51,
+          "name": "Watermelon Mojito",
+          "price": 65,
+          "currency": "dh"
+        },
+        {
+          "number": 52,
+          "name": "Red Bull Mojito",
+          "price": 80,
+          "currency": "dh"
+        },
+        {
+          "number": 53,
+          "name": "MOBO Mojito",
+          "price": 85,
+          "currency": "dh"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "category": "Smoothies",
+      "items": [
+        {
+          "number": 54,
+          "name": "Lemon Ginger Detox",
+          "price": 45,
+          "currency": "dh",
+          "description": "Lemon, ginger"
+        },
+        {
+          "number": 55,
+          "name": "Piña Colada",
+          "price": 65,
+          "currency": "dh",
+          "description": "Pineapple, coconut"
+        },
+        {
+          "number": 56,
+          "name": "Red Smoothie",
+          "price": 85,
+          "currency": "dh",
+          "description": "Strawberry, blueberry, orange"
+        },
+        {
+          "number": 57,
+          "name": "Cannelle Smoothie",
+          "price": 85,
+          "currency": "dh",
+          "description": "Mango, banana, yogurt, cinnamon and orange"
+        },
+        {
+          "number": 58,
+          "name": "Orange Smoothie",
+          "price": 85,
+          "currency": "dh",
+          "description": "Mango, banana, carrot and orange"
+        },
+        {
+          "number": 59,
+          "name": "Bora Bora Smoothie",
+          "price": 85,
+          "currency": "dh",
+          "description": "Pineapple, mango, strawberry"
+        },
+        {
+          "number": 60,
+          "name": "Tropical",
+          "price": 85,
+          "currency": "dh",
+          "description": "Seasonal fruit mix"
+        },
+        {
+          "number": 61,
+          "name": "MOBO",
+          "price": 90,
+          "currency": "dh",
+          "description": "Coconut milk, banana, pineapple"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "category": "Desserts",
+      "items": [
+        {
+          "number": 62,
+          "name": "Tiramisu",
+          "price": 65,
+          "currency": "dh"
+        },
+        {
+          "number": 63,
+          "name": "Cheesecake",
+          "price": 65,
+          "currency": "dh"
+        },
+        {
+          "number": 64,
+          "name": "Brownie",
+          "price": 65,
+          "currency": "dh"
+        },
+        {
+          "number": 65,
+          "name": "Carrot Cake",
+          "price": 75,
+          "currency": "dh"
+        },
+        {
+          "number": 66,
+          "name": "San Sebastián Cheesecake",
+          "price": 75,
+          "currency": "dh"
+        },
+        {
+          "number": 67,
+          "name": "Cookies",
+          "price": 75,
+          "currency": "dh"
+        },
+        {
+          "number": 68,
+          "name": "Fruitboard (For 2)",
+          "price": 80,
+          "currency": "dh"
+        },
+        {
+          "number": 68,
+          "name": "Fruitboard (For 4)",
+          "price": 160,
+          "currency": "dh"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "category": "Breakfast",
+      "items": [
+        {
+          "number": 1,
+          "name": "Traditional",
+          "price": 90,
+          "currency": "dh",
+          "description": "Msemmen, harcha, eggs of your choice (boiled, fried or cheese omelette), olive oil, jam and butter. Includes a hot drink, a fresh juice of your choice, and mineral water."
+        },
+        {
+          "number": 2,
+          "name": "MOBO",
+          "price": 130,
+          "currency": "dh",
+          "description": "Toast with scrambled eggs, avocado and smoked salmon, served with fresh fruit yogurt and granola. Includes a hot drink, a fresh juice of your choice, and mineral water."
+        },
+        {
+          "number": 3,
+          "name": "Kids",
+          "price": 70,
+          "currency": "dh",
+          "description": "2 eggs of your choice (boiled or fried), cornflakes, hot chocolate and a pain au chocolat. Mini-crêpe, orange juice and mineral water."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "category": "Bagel / Toast",
+      "items": [
+        {
+          "number": 4,
+          "name": "Bagel / Toast Cheese",
+          "price": 80,
+          "currency": "dh",
+          "description": "Scrambled eggs and cheddar"
+        },
+        {
+          "number": 5,
+          "name": "Bagel / Toast Avocado",
+          "price": 85,
+          "currency": "dh",
+          "description": "Cheese, avocado, scrambled eggs and walnuts"
+        },
+        {
+          "number": 6,
+          "name": "Bagel / Toast Chicken",
+          "price": 90,
+          "currency": "dh",
+          "description": "Cheddar cheese, chicken fillet, tomato and avocado"
+        },
+        {
+          "number": 7,
+          "name": "Bagel / Toast Tuna",
+          "price": 90,
+          "currency": "dh",
+          "description": "Tuna, boiled egg, mayonnaise, corn and pickles"
+        },
+        {
+          "number": 8,
+          "name": "Bagel / Toast Salmon",
+          "price": 95,
+          "currency": "dh",
+          "description": "Cream cheese, scrambled eggs, avocado and smoked salmon"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "category": "French Toast",
+      "note": "Extras: Jben 10 dh, olive oil 10 dh, cheese 10 dh, butter 10 dh, jam 10 dh, La Vache qui Rit (cheese) 5 dh",
+      "items": [
+        {
+          "number": 9,
+          "name": "Honey French Toast",
+          "price": 75,
+          "currency": "dh",
+          "description": "Butter, honey, cinnamon and whipped cream"
+        },
+        {
+          "number": 10,
+          "name": "Lotus French Toast",
+          "price": 80,
+          "currency": "dh",
+          "description": "Lotus, banana, honey and whipped cream"
+        },
+        {
+          "number": 11,
+          "name": "Nutella French Toast",
+          "price": 80,
+          "currency": "dh",
+          "description": "Nutella, nuts and whipped cream"
+        },
+        {
+          "number": 12,
+          "name": "Mango French Toast",
+          "price": 85,
+          "currency": "dh",
+          "description": "Mango, caramel and whipped cream"
+        },
+        {
+          "number": 13,
+          "name": "Fruits French Toast",
+          "price": 85,
+          "currency": "dh",
+          "description": "Seasonal fruit mix, honey and whipped cream"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "category": "Our Menu Selection",
+      "items": [
+        {
+          "number": 14,
+          "name": "Fried Eggs",
+          "price": 45,
+          "currency": "dh"
+        },
+        {
+          "number": 15,
+          "name": "Plain Omelette",
+          "price": 45,
+          "currency": "dh"
+        },
+        {
+          "number": 16,
+          "name": "Cheese Omelette",
+          "price": 50,
+          "currency": "dh"
+        },
+        {
+          "number": 17,
+          "name": "Vegetable Omelette",
+          "price": 50,
+          "currency": "dh",
+          "description": "Bell pepper, onion and mushrooms"
+        },
+        {
+          "number": 18,
+          "name": "Fruit Yogurt",
+          "price": 75,
+          "currency": "dh"
+        },
+        {
+          "number": 19,
+          "name": "Fruitboard (For 2)",
+          "price": 80,
+          "currency": "dh"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "category": "Sweet Crêpes",
+      "note": "Extras: Jben 10 dh, olive oil 10 dh, cheese 10 dh, butter 10 dh, jam 10 dh, La Vache qui Rit (cheese) 5 dh",
+      "items": [
+        {
+          "number": 20,
+          "name": "Plain",
+          "price": 45,
+          "currency": "dh"
+        },
+        {
+          "number": 21,
+          "name": "Honey",
+          "price": 50,
+          "currency": "dh"
+        },
+        {
+          "number": 22,
+          "name": "Nutella",
+          "price": 70,
+          "currency": "dh"
+        },
+        {
+          "number": 23,
+          "name": "Amlou",
+          "price": 70,
+          "currency": "dh"
+        },
+        {
+          "number": 24,
+          "name": "Nutella & Banana",
+          "price": 80,
+          "currency": "dh"
+        },
+        {
+          "number": 25,
+          "name": "Lotus",
+          "price": 80,
+          "currency": "dh"
+        },
+        {
+          "number": 26,
+          "name": "Dubai Pistachio",
+          "price": 100,
+          "currency": "dh"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "category": "Salads",
+      "items": [
+        {
+          "number": 1,
+          "name": "Quinoa Salad",
+          "price": 110,
+          "currency": "dh",
+          "description": "Quinoa, red onion, cucumber, tomato, mango, avocado, parsley, bell pepper, honey dressing"
+        },
+        {
+          "number": 2,
+          "name": "Tuna Salad",
+          "price": 110,
+          "currency": "dh",
+          "description": "Cherry tomatoes, sweet corn, avocado, cucumber, tuna, egg, black olives"
+        },
+        {
+          "number": 3,
+          "name": "Caprese Salad",
+          "price": 120,
+          "currency": "dh",
+          "description": "Avocado, cherry tomatoes, mozzarella, pesto, balsamic dressing"
+        },
+        {
+          "number": 4,
+          "name": "Caesar Salad",
+          "price": 130,
+          "currency": "dh",
+          "description": "Choice of: Chicken or Shrimp. Mixed salad, toasted croutons, cherry tomatoes, Parmesan cheese, Caesar dressing"
+        },
+        {
+          "number": 5,
+          "name": "Exotic Shrimp Salad",
+          "price": 130,
+          "currency": "dh",
+          "description": "Mixed salad, cherry tomatoes, avocado, mango, kiwi, apple, fried shrimp"
+        },
+        {
+          "number": 6,
+          "name": "Avocado & Shrimp Tartare",
+          "price": 130,
+          "currency": "dh",
+          "description": "Mixed salad, avocado purée, shrimp, cocktail sauce"
+        },
+        {
+          "number": 7,
+          "name": "Salmon Tartare",
+          "price": 150,
+          "currency": "dh",
+          "description": "Mixed salad, fresh salmon, avocado, cream cheese, lemon dressing"
+        },
+        {
+          "number": 8,
+          "name": "MOBO Tartare",
+          "price": 170,
+          "currency": "dh",
+          "description": "Shrimp, calamari, pineapple, avocado, green salad, cherry tomatoes, sweet corn, chef's sauce"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "category": "Wok",
+      "items": [
+        {
+          "number": 9,
+          "name": "Chicken Wok",
+          "price": 170,
+          "currency": "dh",
+          "description": "Chicken, Vegetables. Choice of: Noodles or Cantonese rice. Choice of sauce: Teriyaki, sweet chili, or oyster sauce"
+        },
+        {
+          "number": 10,
+          "name": "Beef Wok",
+          "price": 190,
+          "currency": "dh",
+          "description": "Beef, Vegetables. Choice of: Noodles or Cantonese rice. Choice of sauce: Teriyaki, sweet chili, or oyster sauce"
+        },
+        {
+          "number": 11,
+          "name": "Shrimp Wok",
+          "price": 190,
+          "currency": "dh",
+          "description": "Shrimp, Vegetables. Choice of: Noodles or Cantonese rice. Choice of sauce: Teriyaki, sweet chili, or oyster sauce"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "category": "Soup",
+      "items": [
+        {
+          "number": 12,
+          "name": "Chinese Soup",
+          "price": 110,
+          "currency": "dh",
+          "description": "(seafood)"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "category": "Sides",
+      "items": [
+        {
+          "number": 13,
+          "name": "Edamame",
+          "price": 60,
+          "currency": "dh"
+        },
+        {
+          "number": 14,
+          "name": "Spicy Edamame",
+          "price": 65,
+          "currency": "dh"
+        },
+        {
+          "number": 15,
+          "name": "Fried Calamari",
+          "price": 90,
+          "currency": "dh"
+        },
+        {
+          "number": 16,
+          "name": "Chicken Spring Rolls (3 pcs)",
+          "price": 90,
+          "currency": "dh"
+        },
+        {
+          "number": 17,
+          "name": "Beef Spring Rolls (3 pcs)",
+          "price": 110,
+          "currency": "dh"
+        },
+        {
+          "number": 18,
+          "name": "Chicken Skewers",
+          "price": 90,
+          "currency": "dh",
+          "description": "3 chicken skewers, honey-soy sauce"
+        },
+        {
+          "number": 19,
+          "name": "Beef Skewers",
+          "price": 110,
+          "currency": "dh",
+          "description": "3 beef skewers, honey-ginger sauce"
+        },
+        {
+          "number": 20,
+          "name": "Salmon Skewers",
+          "price": 120,
+          "currency": "dh",
+          "description": "3 salmon skewers, teriyaki sauce"
+        },
+        {
+          "number": 21,
+          "name": "Shrimp Skewers",
+          "price": 120,
+          "currency": "dh",
+          "description": "3 shrimp skewers, honey-teriyaki sauce"
+        },
+        {
+          "number": 22,
+          "name": "Dynamite Shrimp",
+          "price": 120,
+          "currency": "dh"
+        },
+        {
+          "number": 23,
+          "name": "Teppanyaki Beef",
+          "price": 130,
+          "currency": "dh"
+        },
+        {
+          "number": 24,
+          "name": "Mussels Pil-Pil",
+          "price": 130,
+          "currency": "dh"
+        },
+        {
+          "number": 25,
+          "name": "Shrimp Pil-Pil",
+          "price": 130,
+          "currency": "dh"
+        },
+        {
+          "number": 26,
+          "name": "Shrimp Tempura (5 pcs)",
+          "price": 140,
+          "currency": "dh"
+        },
+        {
+          "number": 27,
+          "name": "Lamb Chops (3 pcs)",
+          "price": 140,
+          "currency": "dh",
+          "description": "Honey sauce"
+        },
+        {
+          "number": 28,
+          "name": "Oysters",
+          "price": 190,
+          "currency": "dh"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "category": "Poké Bowl",
+      "items": [
+        {
+          "number": 29,
+          "name": "Chicken Poké Bowl",
+          "price": 150,
+          "currency": "dh",
+          "description": "Sushi rice, fried chicken, avocado, mango, sweet corn, wakame, edamame, crispy onions"
+        },
+        {
+          "number": 30,
+          "name": "Salmon Poké Bowl",
+          "price": 160,
+          "currency": "dh",
+          "description": "Sushi rice, marinated raw salmon, avocado, mango, edamame, cucumber, crispy onions, sesame seeds"
+        },
+        {
+          "number": 31,
+          "name": "Shrimp Poké Bowl",
+          "price": 160,
+          "currency": "dh",
+          "description": "Sushi rice, shrimp tempura, avocado, wakame, edamame, sweet corn, mango"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "category": "Japanese Art - NIGIRI (4 pcs)",
+      "items": [
+        {
+          "number": 32,
+          "name": "Nigiri Salmon",
+          "price": 80,
+          "currency": "dh"
+        },
+        {
+          "number": 33,
+          "name": "Nigiri Shrimp",
+          "price": 80,
+          "currency": "dh"
+        },
+        {
+          "number": 34,
+          "name": "Nigiri Salmon & Avocado",
+          "price": 85,
+          "currency": "dh"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "category": "Japanese Art - MAKI (8 pcs)",
+      "items": [
+        {
+          "number": 35,
+          "name": "Maki Cucumber",
+          "price": 60,
+          "currency": "dh"
+        },
+        {
+          "number": 36,
+          "name": "Maki Avocado",
+          "price": 60,
+          "currency": "dh"
+        },
+        {
+          "number": 37,
+          "name": "Maki Fried Chicken",
+          "price": 60,
+          "currency": "dh"
+        },
+        {
+          "number": 38,
+          "name": "Maki Salmon",
+          "price": 70,
+          "currency": "dh"
+        },
+        {
+          "number": 39,
+          "name": "Maki Salmon & Avocado",
+          "price": 75,
+          "currency": "dh"
+        },
+        {
+          "number": 40,
+          "name": "Maki Shrimp",
+          "price": 75,
+          "currency": "dh"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "category": "Japanese Art - CALIFORNIA (8 pcs)",
+      "items": [
+        {
+          "number": 41,
+          "name": "California Classic",
+          "price": 120,
+          "currency": "dh",
+          "description": "Surimi, cucumber, avocado, tobiko"
+        },
+        {
+          "number": 42,
+          "name": "California Chicken",
+          "price": 120,
+          "currency": "dh",
+          "description": "Fried chicken, avocado, surimi"
+        },
+        {
+          "number": 43,
+          "name": "Ebi Fry",
+          "price": 130,
+          "currency": "dh",
+          "description": "Fried shrimp, avocado, chives"
+        },
+        {
+          "number": 44,
+          "name": "California Salmon",
+          "price": 130,
+          "currency": "dh",
+          "description": "Salmon, avocado, mango, cream cheese"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "category": "Japanese Art - AROMAKI (8 pcs)",
+      "items": [
+        {
+          "number": 45,
+          "name": "Aromaki Chicken",
+          "price": 110,
+          "currency": "dh",
+          "description": "Fried chicken, mango, surimi, tobiko"
+        },
+        {
+          "number": 46,
+          "name": "Aromaki Mango",
+          "price": 120,
+          "currency": "dh",
+          "description": "Salmon, mango, surimi, tobiko"
+        },
+        {
+          "number": 47,
+          "name": "Aromaki Salmon",
+          "price": 120,
+          "currency": "dh",
+          "description": "Salmon, avocado, surimi, tobiko"
+        },
+        {
+          "number": 48,
+          "name": "Aromaki Ebi Shrimp",
+          "price": 120,
+          "currency": "dh",
+          "description": "Ebi shrimp, avocado, mango, surimi"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "category": "Japanese Art - SPECIAL ROLLS (Rice paper, 5 pcs)",
+      "items": [
+        {
+          "number": 49,
+          "name": "Fresh Roll",
+          "price": 120,
+          "currency": "dh",
+          "description": "Smoked salmon, shrimp, avocado, tobiko"
+        },
+        {
+          "number": 50,
+          "name": "Fantasia",
+          "price": 130,
+          "currency": "dh",
+          "description": "Shrimp, salmon, avocado, surimi, eel"
+        },
+        {
+          "number": 51,
+          "name": "Hekari",
+          "price": 140,
+          "currency": "dh",
+          "description": "Double shrimp, mango, tobiko, surimi"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "category": "Japanese Art - CRUNCHY ROLLS (6 pcs)",
+      "items": [
+        {
+          "number": 52,
+          "name": "Chicken Fry",
+          "price": 85,
+          "currency": "dh",
+          "description": "Fried chicken, avocado, mango"
+        },
+        {
+          "number": 53,
+          "name": "Crunchy Fry Ebi Fry",
+          "price": 90,
+          "currency": "dh",
+          "description": "Fried shrimp, avocado, surimi"
+        },
+        {
+          "number": 54,
+          "name": "Crunchy Ebi Fry",
+          "price": 90,
+          "currency": "dh",
+          "description": "Fried shrimp, avocado, cream cheese"
+        },
+        {
+          "number": 55,
+          "name": "Aromaki Pané",
+          "price": 110,
+          "currency": "dh",
+          "description": "Fried shrimp, salmon, avocado, cream cheese"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "category": "Sushi Sharing Board",
+      "items": [
+        {
+          "number": 56,
+          "name": "Sushi Board (20 Pcs)",
+          "price": 400,
+          "currency": "dh"
+        },
+        {
+          "number": 57,
+          "name": "Sushi Board (50 Pcs)",
+          "price": 750,
+          "currency": "dh"
+        },
+        {
+          "number": 58,
+          "name": "Sushi Board (80 Pcs)",
+          "price": 900,
+          "currency": "dh"
+        },
+        {
+          "number": 59,
+          "name": "Sushi Board (120 Pcs)",
+          "price": 1250,
+          "currency": "dh"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "category": "Main Dishes",
+      "items": [
+        {
+          "number": 60,
+          "name": "Chicken Suprême",
+          "price": 200,
+          "currency": "dh",
+          "description": "Grilled chicken fillet, homemade potato purée, broccoli and mushrooms, mustard sauce"
+        },
+        {
+          "number": 61,
+          "name": "Salmon Teppanyaki",
+          "price": 200,
+          "currency": "dh",
+          "description": "Teppanyaki salmon, teriyaki sauce, seasonal vegetables"
+        },
+        {
+          "number": 62,
+          "name": "Beef Fillet",
+          "price": 240,
+          "currency": "dh",
+          "description": "Mushroom sauce, potato purée, seasonal vegetables"
+        },
+        {
+          "number": 63,
+          "name": "Garlic Grilled Gambas",
+          "price": 240,
+          "currency": "dh",
+          "description": "Sweet & sour sauce, vegetables, potato purée"
+        },
+        {
+          "number": 64,
+          "name": "Osso Buco Milanese",
+          "price": 240,
+          "currency": "dh",
+          "description": "Slow-braised veal shank, herb tomato sauce, served with potato purée"
+        },
+        {
+          "number": 65,
+          "name": "Tigre qui Pleure",
+          "price": 260,
+          "currency": "dh",
+          "description": "Grilled beef, Thai sauce, stir-fried vegetables, wok noodles"
+        },
+        {
+          "number": 66,
+          "name": "Seafood Mqila",
+          "price": 290,
+          "currency": "dh",
+          "description": "Gambas, clams, mussels, calamari"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "category": "Grills",
+      "items": [
+        {
+          "number": 67,
+          "name": "MIXED GRILL",
+          "price": null,
+          "currency": "dh",
+          "description": "Chicken skewers, merguez, kefta, and lamb chops",
+          "variants": [
+            {
+              "serving": "1 person",
+              "price": 225
+            },
+            {
+              "serving": "4 people",
+              "price": 900
+            },
+            {
+              "serving": "10 people",
+              "price": 2200
+            }
+          ]
+        },
+        {
+          "number": 68,
+          "name": "Grilled Chicken Mix",
+          "price": 210,
+          "currency": "dh",
+          "description": "Grilled chicken breast and 3 chicken skewers, sautéed vegetables and rice"
+        },
+        {
+          "number": 69,
+          "name": "Mixed Beef Grill",
+          "price": 230,
+          "currency": "dh",
+          "description": "Beef steak and 3 meat skewers, vegetables and rice"
+        },
+        {
+          "number": 70,
+          "name": "Ground Beef Skewers",
+          "price": 230,
+          "currency": "dh",
+          "description": "5 skewers"
+        },
+        {
+          "number": 71,
+          "name": "BBQ Lamb Chops",
+          "price": 250,
+          "currency": "dh",
+          "description": "(5 pcs), vegetables and rice"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "category": "Pizza",
+      "items": [
+        {
+          "number": 72,
+          "name": "Margherita",
+          "price": 90,
+          "currency": "dh",
+          "description": "Tomato sauce, mozzarella, basil, black olives"
+        },
+        {
+          "number": 73,
+          "name": "Vegetarian",
+          "price": 100,
+          "currency": "dh",
+          "description": "Tomato sauce, mozzarella, grilled vegetables"
+        },
+        {
+          "number": 74,
+          "name": "4 Cheese",
+          "price": 110,
+          "currency": "dh",
+          "description": "Cream sauce, mozzarella, blue cheese, Parmesan"
+        },
+        {
+          "number": 75,
+          "name": "Tuna",
+          "price": 120,
+          "currency": "dh",
+          "description": "Tomato sauce, tuna, mozzarella, black olives, bell pepper"
+        },
+        {
+          "number": 76,
+          "name": "Caesar",
+          "price": 130,
+          "currency": "dh",
+          "description": "Cream sauce, mozzarella, black olives, chicken, mushrooms, cherry tomatoes, arugula"
+        },
+        {
+          "number": 77,
+          "name": "Classic Ground Beef Pizza",
+          "price": 130,
+          "currency": "dh",
+          "description": "Tomato sauce, mozzarella, ground beef, mushrooms, black olives"
+        },
+        {
+          "number": 78,
+          "name": "Cheese Pepperoni",
+          "price": 130,
+          "currency": "dh",
+          "description": "Tomato sauce, mozzarella, pepperoni"
+        },
+        {
+          "number": 79,
+          "name": "Frutti di Mare",
+          "price": 135,
+          "currency": "dh",
+          "description": "Tomato sauce, mozzarella, shrimp, calamari, mussels, mushrooms"
+        },
+        {
+          "number": 80,
+          "name": "MOBO",
+          "price": 140,
+          "currency": "dh",
+          "description": "Cream sauce, salmon, mozzarella, arugula, cherry tomatoes"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "category": "Pasta",
+      "note": "Spaghetti, tagliatelle or penne",
+      "items": [
+        {
+          "number": 81,
+          "name": "Pollo à la Panna",
+          "price": 120,
+          "currency": "dh",
+          "description": "Cream sauce, chicken, mushrooms, garlic"
+        },
+        {
+          "number": 82,
+          "name": "Bolognese",
+          "price": 130,
+          "currency": "dh",
+          "description": "Tomato sauce, ground beef, Parmesan, garlic"
+        },
+        {
+          "number": 83,
+          "name": "Gamberoni",
+          "price": 130,
+          "currency": "dh",
+          "description": "Gambas, chili, bisque, cherry tomatoes, mushrooms, basil, olive oil, lemon juice"
+        },
+        {
+          "number": 84,
+          "name": "Frutti di Mare",
+          "price": 135,
+          "currency": "dh",
+          "description": "Tomato or cream sauce, seafood, lemon juice, garlic"
+        },
+        {
+          "number": 85,
+          "name": "Alle Vongole",
+          "price": 140,
+          "currency": "dh",
+          "description": "Fresh clams, fish broth, cherry tomatoes, parsley, garlic, chili"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "category": "Burgers",
+      "items": [
+        {
+          "number": 86,
+          "name": "Cheeseburger",
+          "price": 100,
+          "currency": "dh"
+        },
+        {
+          "number": 87,
+          "name": "Crispy Chicken Burger",
+          "price": 100,
+          "currency": "dh"
+        },
+        {
+          "number": 88,
+          "name": "Fried Egg Burger",
+          "price": 120,
+          "currency": "dh"
+        },
+        {
+          "number": 89,
+          "name": "Double Cheeseburger",
+          "price": 160,
+          "currency": "dh"
+        },
+        {
+          "number": 90,
+          "name": "Smashed Burger",
+          "price": 160,
+          "currency": "dh"
+        },
+        {
+          "number": 91,
+          "name": "Golden MOBO Burger",
+          "price": 190,
+          "currency": "dh"
+        },
+        {
+          "number": 92,
+          "name": "MOBO Fish Burger",
+          "price": 190,
+          "currency": "dh"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "category": "Kids MENU",
+      "items": [
+        {
+          "number": 93,
+          "name": "Cheeseburger Menu",
+          "price": 130,
+          "currency": "dh",
+          "description": "Drink, fries"
+        },
+        {
+          "number": 94,
+          "name": "Nuggets Menu",
+          "price": 130,
+          "currency": "dh",
+          "description": "Drink, fries"
+        },
+        {
+          "number": 95,
+          "name": "Chicken Burger Menu",
+          "price": 130,
+          "currency": "dh",
+          "description": "Drink, fries"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "category": "Crêpes",
+      "items": [
+        {
+          "number": 96,
+          "name": "Plain",
+          "price": 45,
+          "currency": "dh"
+        },
+        {
+          "number": 97,
+          "name": "Honey",
+          "price": 50,
+          "currency": "dh"
+        },
+        {
+          "number": 98,
+          "name": "Nutella",
+          "price": 70,
+          "currency": "dh"
+        },
+        {
+          "number": 99,
+          "name": "Amlou",
+          "price": 70,
+          "currency": "dh"
+        },
+        {
+          "number": 100,
+          "name": "Nutella & Banana",
+          "price": 80,
+          "currency": "dh"
+        },
+        {
+          "number": 101,
+          "name": "Lotus",
+          "price": 80,
+          "currency": "dh"
+        },
+        {
+          "number": 102,
+          "name": "Dubai Pistachio",
+          "price": 100,
+          "currency": "dh"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "category": "Desserts",
+      "items": [
+        {
+          "number": 103,
+          "name": "Tiramisu",
+          "price": 65,
+          "currency": "dh"
+        },
+        {
+          "number": 104,
+          "name": "Cheesecake",
+          "price": 65,
+          "currency": "dh"
+        },
+        {
+          "number": 105,
+          "name": "Brownie",
+          "price": 65,
+          "currency": "dh"
+        },
+        {
+          "number": 106,
+          "name": "Carrot Cake",
+          "price": 75,
+          "currency": "dh"
+        },
+        {
+          "number": 107,
+          "name": "San Sebastián Cheesecake",
+          "price": 75,
+          "currency": "dh"
+        },
+        {
+          "number": 108,
+          "name": "Cookies",
+          "price": 75,
+          "currency": "dh"
+        },
+        {
+          "number": 109,
+          "name": "Fruitboard (For 2)",
+          "price": 80,
+          "currency": "dh"
+        },
+        {
+          "number": 109,
+          "name": "Fruitboard (For 4)",
+          "price": 160,
+          "currency": "dh"
+        }
+      ]
+    }
+  ]
+}
