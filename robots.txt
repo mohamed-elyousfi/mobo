@@ -1,0 +1,7 @@
+# MOBO Beach Club - Ajdir Beach, Al Hoceima
+# The whole site is public. Nothing here is private or paywalled.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://mobo.elyousfimohamed263.workers.dev/sitemap.xml

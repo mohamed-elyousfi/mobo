@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Four pages, hand-listed. Update lastmod when the content changes;
+     leaving it stale is worse than omitting it.
+     Each entry declares its language alternates, which is how Google prefers
+     to receive hreflang for a small site — the same set is also in each page's
+     <head>, and the two must agree. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+    <url>
+        <loc>https://mobo.elyousfimohamed263.workers.dev/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://mobo.elyousfimohamed263.workers.dev/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://mobo.elyousfimohamed263.workers.dev/fr/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://mobo.elyousfimohamed263.workers.dev/"/>
+        <lastmod>2026-08-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://mobo.elyousfimohamed263.workers.dev/fr/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://mobo.elyousfimohamed263.workers.dev/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://mobo.elyousfimohamed263.workers.dev/fr/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://mobo.elyousfimohamed263.workers.dev/"/>
+        <lastmod>2026-08-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://mobo.elyousfimohamed263.workers.dev/menu.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://mobo.elyousfimohamed263.workers.dev/menu.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://mobo.elyousfimohamed263.workers.dev/fr/menu.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://mobo.elyousfimohamed263.workers.dev/menu.html"/>
+        <lastmod>2026-08-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://mobo.elyousfimohamed263.workers.dev/fr/menu.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://mobo.elyousfimohamed263.workers.dev/menu.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://mobo.elyousfimohamed263.workers.dev/fr/menu.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://mobo.elyousfimohamed263.workers.dev/menu.html"/>
+        <lastmod>2026-08-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+</urlset>

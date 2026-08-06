@@ -15,10 +15,14 @@
     const desktop = window.matchMedia("(min-width: 64rem)");
 
     // --- theme ------------------------------------------------------------
+    // The two labels come from the markup so translated pages announce their own
+    // language; the English defaults are only a safety net if a page omits them.
     function applyTheme(theme) {
         root.dataset.theme = theme;
         const toDark = theme === "light";
-        themeBtn.setAttribute("aria-label", toDark ? "Switch to dark mode" : "Switch to light mode");
+        themeBtn.setAttribute("aria-label", toDark
+            ? themeBtn.dataset.labelDark || "Switch to dark mode"
+            : themeBtn.dataset.labelLight || "Switch to light mode");
         themeBtn.setAttribute("aria-pressed", String(theme === "dark"));
     }
 
@@ -41,7 +45,9 @@
     function setMenu(open) {
         menu.classList.toggle("is-open", open);
         burger.setAttribute("aria-expanded", String(open));
-        burger.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+        burger.setAttribute("aria-label", open
+            ? burger.dataset.labelClose || "Close menu"
+            : burger.dataset.labelOpen || "Open menu");
     }
 
     burger.addEventListener("click", () => {
@@ -67,6 +73,39 @@
     desktop.addEventListener("change", e => {
         if (e.matches) setMenu(false);
     });
+
+    // --- language menu ----------------------------------------------------
+    // A plain disclosure: the list is real links, so it still works without JS
+    // once opened, and hidden is the only state JS touches.
+    const langBtn = document.getElementById("lang-toggle");
+    const langList = document.getElementById("lang-list");
+
+    if (langBtn && langList) {
+        const setLang = open => {
+            langList.hidden = !open;
+            langBtn.setAttribute("aria-expanded", String(open));
+        };
+
+        langBtn.addEventListener("click", e => {
+            // Without this the document handler below sees the same click and
+            // closes the list in the same tick it was opened.
+            e.stopPropagation();
+            setLang(langBtn.getAttribute("aria-expanded") !== "true");
+        });
+
+        document.addEventListener("click", e => {
+            if (!e.target.closest("#nav-lang")) setLang(false);
+        });
+
+        document.addEventListener("keydown", e => {
+            if (e.key !== "Escape" || langBtn.getAttribute("aria-expanded") !== "true") return;
+            setLang(false);
+            langBtn.focus();
+        });
+
+        // The panel is anchored to the button, so it would drift off on a resize.
+        desktop.addEventListener("change", () => setLang(false));
+    }
 
     // --- hero background video (small screens only) -----------------------
     // Desktop uses a still declared in CSS, so the source is attached here
@@ -103,6 +142,13 @@
             return;
         }
 
+        // Four language copies of this markup exist; if one loses its data-src,
+        // fall back to the still rather than requesting "undefined".
+        if (!video.dataset.src) {
+            bg.classList.add("is-still");
+            return;
+        }
+
         bg.classList.remove("is-still");
 
         if (!video.dataset.loaded) {
@@ -110,7 +156,10 @@
             // muted is what actually keeps it silent in the page; the file itself
             // still carries an audio track.
             video.muted = true;
-            video.src = "assets/p.mp4";
+            // The path comes from the markup, not from here: translated pages sit
+            // one folder down, so a literal "assets/p.mp4" would resolve against
+            // /fr/ and 404. Each page states its own relative path.
+            video.src = video.dataset.src;
             video.addEventListener("canplay", () => {
                 video.classList.add("is-ready");
             }, { once: true });

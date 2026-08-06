@@ -251,6 +251,16 @@ a {
     color: var(--bg);
 }
 
+/* The language menu made this a four-control row. Logo + CTA + the three round
+   buttons + gutters measures 361px, so below roughly this width it stops
+   fitting. The CTA is the one that steps aside — the mobile panel already
+   carries the same link, and the burger cannot. */
+@media (max-width: 24rem) {
+    .nav__cta {
+        display: none;
+    }
+}
+
 /* --- theme toggle -------------------------------------------------------- */
 .nav__theme {
     position: relative;
@@ -403,6 +413,81 @@ a {
 /* Underline is a desktop affordance; the panel uses colour + dividers. */
 .nav__menu .nav__link::after {
     display: none;
+}
+
+/* --------------------------------------------------------------------------
+   NAVBAR — LANGUAGE MENU
+   Sits in .nav__actions, immediately before the theme toggle. The trigger is
+   the same 2.75rem circle as the theme and burger buttons so the three read as
+   one row of controls; the panel hangs off it.
+   -------------------------------------------------------------------------- */
+.nav__lang {
+    position: relative;
+}
+
+.nav__lang-btn {
+    display: grid;
+    place-items: center;
+    height: 2.75rem;
+    width: 2.75rem;
+    border-radius: 50%;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: var(--text);
+    text-transform: uppercase;
+    transition: background-color 0.15s var(--ease);
+}
+
+.nav__lang-btn:hover,
+.nav__lang-btn[aria-expanded="true"] {
+    background-color: var(--line);
+}
+
+.nav__lang-list {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: 0;
+    z-index: 20;
+    min-width: 9rem;
+    list-style: none;
+    padding: 0.35rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background-color: var(--surface);
+    box-shadow: var(--shadow);
+}
+
+/* [hidden] needs the override because the rule above sets display. */
+.nav__lang-list[hidden] {
+    display: none;
+}
+
+.nav__lang-link {
+    display: block;
+    padding: 0.55rem 0.7rem;
+    border-radius: 0.5rem;
+    font-size: 0.9375rem;
+    color: var(--text);
+    white-space: nowrap;
+    transition: background-color 0.15s var(--ease), color 0.15s var(--ease);
+}
+
+.nav__lang-link:hover {
+    background-color: var(--line);
+}
+
+/* The current language is marked with a tick as well as weight, so it does not
+   depend on colour alone — aria-current carries the same fact for AT. */
+.nav__lang-link.is-current {
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.nav__lang-link.is-current::after {
+    content: "✓";
+    float: right;
+    margin-left: 0.75rem;
 }
 
 /* --------------------------------------------------------------------------
