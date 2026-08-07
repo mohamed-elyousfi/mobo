@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-theme="light">
+<html lang="nl" data-theme="light">
 
 <!-- ============================================================
      TEMPLATE — do not edit menu.html directly, it is generated.
@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>La carte — MOBO Beach Club | Ajdir, Al Hoceima</title>
-    <meta name="description" content="Toute la carte du MOBO Beach Club — cafés, jus, petit-déjeuner, salades, sushis, grillades, pizzas, pâtes, burgers et desserts. Plage d'Ajdir, Al Hoceima, Maroc.">
-    <link rel="canonical" href="https://mobo.ajdir.workers.dev/fr/menu">
+    <title>Menukaart — MOBO Beach Club | Ajdir, Al Hoceima</title>
+    <meta name="description" content="De volledige menukaart van MOBO Beach Club — koffie, sappen, ontbijt, salades, sushi, grill, pizza, pasta, burgers en desserts. Strand van Ajdir, Al Hoceima, Marokko.">
+    <link rel="canonical" href="https://mobo.ajdir.workers.dev/nl/menu">
 
     <link rel="alternate" hreflang="en" href="https://mobo.ajdir.workers.dev/menu">
     <link rel="alternate" hreflang="fr" href="https://mobo.ajdir.workers.dev/fr/menu">
@@ -25,12 +25,12 @@
 
     <meta property="og:type" content="restaurant">
     <meta property="og:site_name" content="MOBO Beach Club">
-    <meta property="og:title" content="La carte — MOBO Beach Club">
-    <meta property="og:description" content="Cafés, jus, petit-déjeuner, salades, sushis, grillades, pizzas, burgers et desserts. Ouvert tous les jours de 10h à 03h.">
+    <meta property="og:title" content="Menukaart — MOBO Beach Club">
+    <meta property="og:description" content="Koffie, sappen, ontbijt, salades, sushi, grill, pizza, burgers en desserts. Dagelijks geopend van 10:00 tot 03:00.">
     <meta property="og:image" content="https://mobo.ajdir.workers.dev/assets/og-image.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:locale" content="fr">
+    <meta property="og:locale" content="nl">
     <meta name="twitter:card" content="summary_large_image">
 
     <!-- Light by default; dark is opt-in via the toggle. Matches index.html. -->
@@ -52,12 +52,12 @@
 </head>
 
 <body>
-    <a class="skip-link" href="#main">Aller au contenu principal</a>
+    <a class="skip-link" href="#main">Naar de hoofdinhoud</a>
 
     <header class="nav" id="nav">
         <div class="nav__inner">
 
-            <a class="nav__logo" href="index.html" aria-label="MOBO Beach Club — accueil">
+            <a class="nav__logo" href="index.html" aria-label="MOBO Beach Club — home">
                 <img class="nav__logo-img nav__logo-img--light" src="../assets/logo/whitelogo.webp"
                      width="1254" height="1254" alt="MOBO Beach Club"
                      fetchpriority="high" decoding="async">
@@ -65,39 +65,39 @@
                      width="1254" height="1254" alt="" aria-hidden="true" decoding="async">
             </a>
 
-            <nav class="nav__menu" id="nav-menu" aria-label="Principal">
+            <nav class="nav__menu" id="nav-menu" aria-label="Hoofdnavigatie">
                 <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" href="/fr/">Accueil</a></li>
-                    <li class="nav__item"><a class="nav__link is-active" href="menu.html" aria-current="page">Carte</a></li>
-                    <li class="nav__item"><a class="nav__link" href="index.html#dishes">Galerie</a></li>
-                    <li class="nav__item"><a class="nav__link" href="index.html#about">À propos</a></li>
+                    <li class="nav__item"><a class="nav__link" href="/nl/">Home</a></li>
+                    <li class="nav__item"><a class="nav__link is-active" href="menu.html" aria-current="page">Menukaart</a></li>
+                    <li class="nav__item"><a class="nav__link" href="index.html#dishes">Galerij</a></li>
+                    <li class="nav__item"><a class="nav__link" href="index.html#about">Over ons</a></li>
                     <li class="nav__item"><a class="nav__link" href="index.html#contact">Contact</a></li>
                 </ul>
             </nav>
 
             <div class="nav__actions">
-                <a class="nav__cta" href="index.html#contact">Nous trouver</a>
+                <a class="nav__cta" href="index.html#contact">Locatie</a>
 
                 <!-- Points at the French MENU, not the French homepage: switching
                      language should keep you on the page you were reading. -->
                 <div class="nav__lang" id="nav-lang">
                     <button class="nav__lang-btn" id="lang-toggle" type="button"
                             aria-expanded="false" aria-controls="lang-list"
-                            aria-label="Choisir la langue — actuelle : Français">FR</button>
+                            aria-label="Kies taal — huidig: Nederlands">NL</button>
                     <ul class="nav__lang-list" id="lang-list" hidden>
                         <li><a class="nav__lang-link" href="/menu.html"
                                hreflang="en" lang="en">English</a></li>
-                        <li><a class="nav__lang-link is-current" href="/fr/menu.html"
-                               hreflang="fr" lang="fr" aria-current="true">Français</a></li>
-                        <li><a class="nav__lang-link" href="/nl/menu.html"
-                               hreflang="nl" lang="nl">Nederlands</a></li>
+                        <li><a class="nav__lang-link" href="/fr/menu.html"
+                               hreflang="fr" lang="fr">Français</a></li>
+                        <li><a class="nav__lang-link is-current" href="/nl/menu.html"
+                               hreflang="nl" lang="nl" aria-current="true">Nederlands</a></li>
                     </ul>
                 </div>
 
                 <button class="nav__theme" id="theme-toggle" type="button"
-                        aria-label="Passer en mode sombre" aria-pressed="false"
-                        data-label-dark="Passer en mode sombre"
-                        data-label-light="Passer en mode clair">
+                        aria-label="Overschakelen naar donkere modus" aria-pressed="false"
+                        data-label-dark="Overschakelen naar donkere modus"
+                        data-label-light="Overschakelen naar lichte modus">
                     <svg class="nav__icon nav__icon--moon" viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" />
                     </svg>
@@ -108,8 +108,8 @@
                 </button>
 
                 <button class="nav__burger" id="nav-burger" type="button"
-                        aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-menu"
-                        data-label-open="Ouvrir le menu" data-label-close="Fermer le menu">
+                        aria-label="Menu openen" aria-expanded="false" aria-controls="nav-menu"
+                        data-label-open="Menu openen" data-label-close="Menu sluiten">
                     <span class="nav__burger-bars" aria-hidden="true"></span>
                 </button>
             </div>
@@ -125,27 +125,27 @@
                 <svg class="m-head__wave" viewBox="0 0 120 12" aria-hidden="true">
                     <path d="M1 7.5c9-8 18 4 27-1s18-7.5 27-2.5 18 7 27 2 15-5 37-1" />
                 </svg>
-                <h1 class="m-head__title">Notre carte</h1>
+                <h1 class="m-head__title">Onze menukaart</h1>
             </div>
         </section>
 
-        <div class="m-tabs" id="m-tabs" aria-label="Sections de la carte">
+        <div class="m-tabs" id="m-tabs" aria-label="Onderdelen van de kaart">
             <div class="m-tabs__list">
-                <a class="m-tab" href="#drinks" data-group="drinks" id="tab-drinks">Boissons</a>
-<a class="m-tab" href="#breakfast" data-group="breakfast" id="tab-breakfast">Petit-déjeuner</a>
-<a class="m-tab" href="#starters" data-group="starters" id="tab-starters">Entrées &amp; salades</a>
+                <a class="m-tab" href="#drinks" data-group="drinks" id="tab-drinks">Dranken</a>
+<a class="m-tab" href="#breakfast" data-group="breakfast" id="tab-breakfast">Ontbijt</a>
+<a class="m-tab" href="#starters" data-group="starters" id="tab-starters">Voorgerechten &amp; salades</a>
 <a class="m-tab" href="#sushi" data-group="sushi" id="tab-sushi">Sushi</a>
-<a class="m-tab" href="#mains" data-group="mains" id="tab-mains">Plats</a>
+<a class="m-tab" href="#mains" data-group="mains" id="tab-mains">Hoofdgerechten</a>
 <a class="m-tab" href="#desserts" data-group="desserts" id="tab-desserts">Desserts</a>
-<a class="m-tab" href="#kids" data-group="kids" id="tab-kids">Enfants</a>
+<a class="m-tab" href="#kids" data-group="kids" id="tab-kids">Kinderen</a>
             </div>
         </div>
 
         <div class="m-body" id="m-body">
             <section class="m-panel" id="drinks" data-group="drinks" aria-labelledby="tab-drinks">
 <div class="m-sub">
-<label class="m-sub__label" for="sub-drinks">Filtrer : Boissons</label>
-<select class="m-sub__select" id="sub-drinks"><option value="all">Tout — Boissons</option>
+<label class="m-sub__label" for="sub-drinks">Filter: Dranken</label>
+<select class="m-sub__select" id="sub-drinks"><option value="all">Alles — Dranken</option>
 <option value="hot-drinks">Hot Drinks</option>
 <option value="iced-coffee">Iced Coffee</option>
 <option value="matcha">Matcha</option>
@@ -153,7 +153,7 @@
 <option value="juices">Juices</option>
 <option value="mojito-s">Mojito's</option>
 <option value="smoothies">Smoothies</option></select>
-<ul class="m-sub__list"><li><a class="m-sub__chip" href="#drinks" data-sub="all">Tout</a></li>
+<ul class="m-sub__list"><li><a class="m-sub__chip" href="#drinks" data-sub="all">Alles</a></li>
 <li><a class="m-sub__chip" href="#drinks/hot-drinks" data-sub="hot-drinks">Hot Drinks</a></li>
 <li><a class="m-sub__chip" href="#drinks/iced-coffee" data-sub="iced-coffee">Iced Coffee</a></li>
 <li><a class="m-sub__chip" href="#drinks/matcha" data-sub="matcha">Matcha</a></li>
@@ -223,13 +223,13 @@
 
 <section class="m-panel" id="breakfast" data-group="breakfast" aria-labelledby="tab-breakfast">
 <div class="m-sub">
-<label class="m-sub__label" for="sub-breakfast">Filtrer : Petit-déjeuner</label>
-<select class="m-sub__select" id="sub-breakfast"><option value="all">Tout — Petit-déjeuner</option>
+<label class="m-sub__label" for="sub-breakfast">Filter: Ontbijt</label>
+<select class="m-sub__select" id="sub-breakfast"><option value="all">Alles — Ontbijt</option>
 <option value="breakfast">Breakfast</option>
 <option value="bagel-toast">Bagel / Toast</option>
 <option value="french-toast">French Toast</option>
 <option value="our-menu-selection">Our Menu Selection</option></select>
-<ul class="m-sub__list"><li><a class="m-sub__chip" href="#breakfast" data-sub="all">Tout</a></li>
+<ul class="m-sub__list"><li><a class="m-sub__chip" href="#breakfast" data-sub="all">Alles</a></li>
 <li><a class="m-sub__chip" href="#breakfast/breakfast" data-sub="breakfast">Breakfast</a></li>
 <li><a class="m-sub__chip" href="#breakfast/bagel-toast" data-sub="bagel-toast">Bagel / Toast</a></li>
 <li><a class="m-sub__chip" href="#breakfast/french-toast" data-sub="french-toast">French Toast</a></li>
@@ -272,13 +272,13 @@
 
 <section class="m-panel" id="starters" data-group="starters" aria-labelledby="tab-starters">
 <div class="m-sub">
-<label class="m-sub__label" for="sub-starters">Filtrer : Entrées &amp; salades</label>
-<select class="m-sub__select" id="sub-starters"><option value="all">Tout — Entrées &amp; salades</option>
+<label class="m-sub__label" for="sub-starters">Filter: Voorgerechten &amp; salades</label>
+<select class="m-sub__select" id="sub-starters"><option value="all">Alles — Voorgerechten &amp; salades</option>
 <option value="salads">Salads</option>
 <option value="sides">Sides</option>
 <option value="soup">Soup</option>
 <option value="poke-bowl">Poké Bowl</option></select>
-<ul class="m-sub__list"><li><a class="m-sub__chip" href="#starters" data-sub="all">Tout</a></li>
+<ul class="m-sub__list"><li><a class="m-sub__chip" href="#starters" data-sub="all">Alles</a></li>
 <li><a class="m-sub__chip" href="#starters/salads" data-sub="salads">Salads</a></li>
 <li><a class="m-sub__chip" href="#starters/sides" data-sub="sides">Sides</a></li>
 <li><a class="m-sub__chip" href="#starters/soup" data-sub="soup">Soup</a></li>
@@ -321,8 +321,8 @@
 
 <section class="m-panel" id="sushi" data-group="sushi" aria-labelledby="tab-sushi">
 <div class="m-sub">
-<label class="m-sub__label" for="sub-sushi">Filtrer : Sushi</label>
-<select class="m-sub__select" id="sub-sushi"><option value="all">Tout — Sushi</option>
+<label class="m-sub__label" for="sub-sushi">Filter: Sushi</label>
+<select class="m-sub__select" id="sub-sushi"><option value="all">Alles — Sushi</option>
 <option value="japanese-art-nigiri-4-pcs">NIGIRI (4 pcs)</option>
 <option value="japanese-art-maki-8-pcs">MAKI (8 pcs)</option>
 <option value="japanese-art-california-8-pcs">CALIFORNIA (8 pcs)</option>
@@ -330,7 +330,7 @@
 <option value="japanese-art-special-rolls-rice-paper-5-pcs">SPECIAL ROLLS (Rice paper, 5 pcs)</option>
 <option value="japanese-art-crunchy-rolls-6-pcs">CRUNCHY ROLLS (6 pcs)</option>
 <option value="sushi-sharing-board">Sushi Sharing Board</option></select>
-<ul class="m-sub__list"><li><a class="m-sub__chip" href="#sushi" data-sub="all">Tout</a></li>
+<ul class="m-sub__list"><li><a class="m-sub__chip" href="#sushi" data-sub="all">Alles</a></li>
 <li><a class="m-sub__chip" href="#sushi/japanese-art-nigiri-4-pcs" data-sub="japanese-art-nigiri-4-pcs">NIGIRI (4 pcs)</a></li>
 <li><a class="m-sub__chip" href="#sushi/japanese-art-maki-8-pcs" data-sub="japanese-art-maki-8-pcs">MAKI (8 pcs)</a></li>
 <li><a class="m-sub__chip" href="#sushi/japanese-art-california-8-pcs" data-sub="japanese-art-california-8-pcs">CALIFORNIA (8 pcs)</a></li>
@@ -400,15 +400,15 @@
 
 <section class="m-panel" id="mains" data-group="mains" aria-labelledby="tab-mains">
 <div class="m-sub">
-<label class="m-sub__label" for="sub-mains">Filtrer : Plats</label>
-<select class="m-sub__select" id="sub-mains"><option value="all">Tout — Plats</option>
+<label class="m-sub__label" for="sub-mains">Filter: Hoofdgerechten</label>
+<select class="m-sub__select" id="sub-mains"><option value="all">Alles — Hoofdgerechten</option>
 <option value="main-dishes">Main Dishes</option>
 <option value="grills">Grills</option>
 <option value="wok">Wok</option>
 <option value="pizza">Pizza</option>
 <option value="pasta">Pasta</option>
 <option value="burgers">Burgers</option></select>
-<ul class="m-sub__list"><li><a class="m-sub__chip" href="#mains" data-sub="all">Tout</a></li>
+<ul class="m-sub__list"><li><a class="m-sub__chip" href="#mains" data-sub="all">Alles</a></li>
 <li><a class="m-sub__chip" href="#mains/main-dishes" data-sub="main-dishes">Main Dishes</a></li>
 <li><a class="m-sub__chip" href="#mains/grills" data-sub="grills">Grills</a></li>
 <li><a class="m-sub__chip" href="#mains/wok" data-sub="wok">Wok</a></li>
@@ -469,11 +469,11 @@
 
 <section class="m-panel" id="desserts" data-group="desserts" aria-labelledby="tab-desserts">
 <div class="m-sub">
-<label class="m-sub__label" for="sub-desserts">Filtrer : Desserts</label>
-<select class="m-sub__select" id="sub-desserts"><option value="all">Tout — Desserts</option>
+<label class="m-sub__label" for="sub-desserts">Filter: Desserts</label>
+<select class="m-sub__select" id="sub-desserts"><option value="all">Alles — Desserts</option>
 <option value="desserts">Desserts</option>
 <option value="sweet-crepes">Sweet Crêpes</option></select>
-<ul class="m-sub__list"><li><a class="m-sub__chip" href="#desserts" data-sub="all">Tout</a></li>
+<ul class="m-sub__list"><li><a class="m-sub__chip" href="#desserts" data-sub="all">Alles</a></li>
 <li><a class="m-sub__chip" href="#desserts/desserts" data-sub="desserts">Desserts</a></li>
 <li><a class="m-sub__chip" href="#desserts/sweet-crepes" data-sub="sweet-crepes">Sweet Crêpes</a></li></ul>
 </div>
@@ -498,10 +498,10 @@
 
 <section class="m-panel" id="kids" data-group="kids" aria-labelledby="tab-kids">
 <div class="m-sub">
-<label class="m-sub__label" for="sub-kids">Filtrer : Enfants</label>
-<select class="m-sub__select" id="sub-kids"><option value="all">Tout — Enfants</option>
+<label class="m-sub__label" for="sub-kids">Filter: Kinderen</label>
+<select class="m-sub__select" id="sub-kids"><option value="all">Alles — Kinderen</option>
 <option value="kids-menu">Kids MENU</option></select>
-<ul class="m-sub__list"><li><a class="m-sub__chip" href="#kids" data-sub="all">Tout</a></li>
+<ul class="m-sub__list"><li><a class="m-sub__chip" href="#kids" data-sub="all">Alles</a></li>
 <li><a class="m-sub__chip" href="#kids/kids-menu" data-sub="kids-menu">Kids MENU</a></li></ul>
 </div>
 <div class="m-cats">
@@ -533,12 +533,12 @@
                  alt="MOBO Beach Club" loading="lazy" decoding="async">
 
             <p class="foot__name">MOBO Beach Club</p>
-            <p class="foot__tag">De 10h à 03h · Piscine • Plage • Restaurant • Café • Ouvert tous les jours</p>
+            <p class="foot__tag">Van 10:00 tot 03:00 · Zwembad • Strand • Restaurant • Café • Dagelijks geopend</p>
 
             <ul class="foot__social">
                 <li>
                     <a href="https://www.instagram.com/moboalhoceima" target="_blank"
-                       rel="noopener noreferrer" aria-label="MOBO sur Instagram">
+                       rel="noopener noreferrer" aria-label="MOBO op Instagram">
                         <svg viewBox="0 0 24 24" class="foot__icon foot__icon--stroke" aria-hidden="true">
                             <rect x="2" y="2" width="20" height="20" rx="5" />
                             <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
@@ -548,7 +548,7 @@
                 </li>
                 <li>
                     <a href="https://web.facebook.com/p/Mobo-Al-Hoceima-61560132773730/" target="_blank"
-                       rel="noopener noreferrer" aria-label="MOBO sur Facebook">
+                       rel="noopener noreferrer" aria-label="MOBO op Facebook">
                         <svg viewBox="0 0 24 24" class="foot__icon foot__icon--stroke" aria-hidden="true">
                             <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
                         </svg>
@@ -556,7 +556,7 @@
                 </li>
                 <li>
                     <a href="https://www.tiktok.com/@moboalhoceima" target="_blank"
-                       rel="noopener noreferrer" aria-label="MOBO sur TikTok">
+                       rel="noopener noreferrer" aria-label="MOBO op TikTok">
                         <svg viewBox="0 0 24 24" class="foot__icon" aria-hidden="true">
                             <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1 0-5.78 2.92 2.92 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 3 15.57 6.33 6.33 0 0 0 9.37 22a6.33 6.33 0 0 0 6.37-6.22V9.4a8.16 8.16 0 0 0 3.85.96V7.11a4.85 4.85 0 0 1-.01-.42z" />
                         </svg>
@@ -564,7 +564,7 @@
                 </li>
                 <li>
                     <a href="https://api.whatsapp.com/send?phone=212648893510" target="_blank"
-                       rel="noopener noreferrer" aria-label="MOBO sur WhatsApp">
+                       rel="noopener noreferrer" aria-label="MOBO op WhatsApp">
                         <svg viewBox="0 0 24 24" class="foot__icon" aria-hidden="true">
                             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
                         </svg>
@@ -589,7 +589,7 @@
                             <circle cx="12" cy="10" r="3" />
                         </svg>
                         <a href="https://maps.app.goo.gl/h8HUVmPK9J8184uY7" target="_blank" rel="noopener noreferrer">
-                            Plage d'Ajdir<br>Al Hoceima, Maroc
+                            Strand van Ajdir<br>Al Hoceima, Marokko
                         </a>
                     </li>
                 </ul>
