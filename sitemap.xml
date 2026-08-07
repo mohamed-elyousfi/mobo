@@ -28,20 +28,20 @@
     </url>
 
     <url>
-        <loc>https://mobo.ajdir.workers.dev/menu.html</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://mobo.ajdir.workers.dev/menu.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://mobo.ajdir.workers.dev/fr/menu.html"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://mobo.ajdir.workers.dev/menu.html"/>
+        <loc>https://mobo.ajdir.workers.dev/menu</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://mobo.ajdir.workers.dev/menu"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://mobo.ajdir.workers.dev/fr/menu"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://mobo.ajdir.workers.dev/menu"/>
         <lastmod>2026-08-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://mobo.ajdir.workers.dev/fr/menu.html</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://mobo.ajdir.workers.dev/menu.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://mobo.ajdir.workers.dev/fr/menu.html"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://mobo.ajdir.workers.dev/menu.html"/>
+        <loc>https://mobo.ajdir.workers.dev/fr/menu</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://mobo.ajdir.workers.dev/menu"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://mobo.ajdir.workers.dev/fr/menu"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://mobo.ajdir.workers.dev/menu"/>
         <lastmod>2026-08-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
