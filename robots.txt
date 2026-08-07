@@ -4,4 +4,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mobo.elyousfimohamed263.workers.dev/sitemap.xml
+Sitemap: https://mobo.ajdir.workers.dev/sitemap.xml
